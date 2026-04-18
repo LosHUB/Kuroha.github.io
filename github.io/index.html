@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPPORT DE MISSION | Bureau de Renseignement</title>
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mist-container">
+        <div class="mist-layer mist-1"></div>
+        <div class="mist-layer mist-2"></div>
+    </div>
+    <div class="bokeh-overlay"></div>
+    
+    <header class="main-header" data-aos="fade-down" data-aos-duration="1200">
+        <div class="logo-area">
+            <span class="confidential-tag">CONFIDENTIEL</span>
+            <h1 class="serif-title">RAPPORT DE MISSION #01</h1>
+            <p class="mission-status"><span class="pulse-dot"></span> PHASE DE RECOLTE : MISSION COMMANDEMENT (BRUME)</p>
+        </div>
+        <div class="agent-info">
+            <p>POURFENDEUR : <span>KUROHA</span></p>
+            <p>GRADE : <span>ASPIRANT</span></p>
+        </div>
+    </header>
+
+    <main class="report-content">
+        <!-- MANUSCRIPT COVER -->
+        <section id="manuscript" class="hero-section" data-aos="zoom-in">
+            <div class="manuscript-card">
+                <div class="card-bg-overlay"></div>
+                <img src="assets/deco.png" class="card-deco top" alt="deco">
+                <div class="symbol-ring">
+                    <img src="assets/logo_brume.png" alt="Logo Pourfendeur" class="inner-logo">
+                </div>
+                <h3>MANUSCRIT</h3>
+                <p class="subtitle">Analyse du Commandement & Sondage de l'Ordre (Brume)</p>
+                <div class="divider"></div>
+                <p class="description">Ce rapport compile l'évaluation exhaustive de 12 membres de l'Ordre concernant l'efficacité, la communication et la coordination du commandement actuel face à la menace démoniaque.</p>
+                <a href="#intel" class="btn-enter">LIRE LE RAPPORT</a>
+                <img src="assets/deco.png" class="card-deco bottom" alt="deco">
+            </div>
+        </section>
+
+        <!-- INTEL SECTION (COMMANDERS) -->
+        <section id="intel" class="intel-section">
+            <div class="section-header">
+                <h2 class="section-title serif-title" data-aos="fade-right">I. ANALYSE INDIVIDUELLE</h2>
+                <img src="assets/bar.png" class="header-bar" alt="bar">
+            </div>
+            
+            <p class="section-subtitle" data-aos="fade-right">Observations sur le terrain et aptitudes de commandement.</p>
+            
+            <div class="commander-grid">
+                <!-- TAIZO -->
+                <a href="#details-taizo" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOE AMOUR</span>
+                            <h4>TAIZO</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Excellent soutien pour les gradés et recrues en interne, mais cruel manque d'implication lors des affrontements directs contre les démons.</p>
+                        </div>
+                    </a>
+
+                <!-- ZELIOS -->
+                <a href="#details-zelios" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOTO BRUME</span>
+                            <h4>ZELIOS IESADA</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Expertise stratégique et formation exemplaire. Toutefois, son encadrement manque de proactivité : il intervient rarement auprès des bas gradés s'il n'est pas directement sollicité.</p>
+                    </div>
+                </a>
+
+                <!-- YUU -->
+                <a href="#details-yuu" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOE FLEUR</span>
+                            <h4>YUU FURUKAWA</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Leadership d'exception et gestion exemplaire du bureau des missions. Perçue comme l'élément le plus indispensable par les effectifs.</p>
+                    </div>
+                </a>
+
+                <!-- KOSEI -->
+                <a href="#details-kosei" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOTO FOUDRE</span>
+                            <h4>KOSEI RAIJINSHIN</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Rigueur administrative contestée. Des lacunes critiques dans la transmission des informations stratégiques ont été relevées.</p>
+                    </div>
+                </a>
+
+                <!-- YURA -->
+                <a href="#details-yura" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOTO FLAMME</span>
+                            <h4>YURA KATSURAGI</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Implication notable auprès des effectifs. Rapprochement stratégique avec les bas gradés salué par les unités.</p>
+                    </div>
+                </a>
+
+                <!-- SHUN -->
+                <a href="#details-shun" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOE FOUDRE</span>
+                            <h4>SHUN NOZEN</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Moteur opérationnel et autorité tactique. Capacité démontrée de résolution de problèmes complexes sur zone.</p>
+                    </div>
+                </a>
+
+                <!-- KAEDE -->
+                <a href="#details-kaede" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOE SERPENT</span>
+                            <h4>KAEDE IESADA</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Pilier défensif indispensable face aux menaces d'élite. Expertise diplomatique et protectrice confirmée.</p>
+                    </div>
+                </a>
+
+                <!-- AYUUMI -->
+                <a href="#details-ayuumi" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOTO SERPENT</span>
+                            <h4>AYUUMI IESADA</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Spécialiste du repérage et de la défense statique. Cible prioritaire du renseignement adverse. Fiabilité de zone documentée.</p>
+                    </div>
+                </a>
+
+                <!-- TEMIRO -->
+                <a href="#details-temiro" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOTO SERPENT</span>
+                            <h4>TEMIRO IESADA</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Efficacité chirurgicale. Capacité à neutraliser les menaces à la racine avec une neutralité exemplaire.</p>
+                    </div>
+                </a>
+
+                <!-- THAR -->
+                <a href="#details-thar" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOTO FLAMME</span>
+                            <h4>KAZEKO THAR</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Gérant logistique efficace. Mentorat proactif des recrues au QG. Présence terrain en expansion.</p>
+                    </div>
+                </a>
+
+                <!-- MANA -->
+                <a href="#details-mana" class="card-link" data-aos="fade-up">
+                    <div class="commander-card">
+                        <div class="card-header">
+                            <span class="rank">HINOTO VENT</span>
+                            <h4>MANA TOYAMA</h4>
+                        </div>
+                            <p><strong>Observation :</strong> Statut opérationnel inaccessible. Absence prolongée entraînant un manque de données analytiques récentes.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="conclusion" class="conclusion-section" data-aos="fade-up">
+            <h2 class="serif-title">II. SYNTHÈSE ET RECOMMANDATIONS</h2>
+            
+            <div class="report-block">
+                <h3>V. BILAN DE COORDINATION</h3>
+                <p>La communication globale est jugée satisfaisante avec les compagnons de grade égal, mais souffre de lacunes critiques lors des déploiements impliquant plusieurs commandements. Des ordres contradictoires et un manque de suivi administratif ont été signalés à plusieurs reprises.</p>
+            </div>
+
+            <div class="report-block">
+                <h3>VI. CONCLUSION GÉNÉRALE</h3>
+                <p>L'expérience globale reste positive grâce à la solidarité entre membres, mais des déséquilibres de présence entre certains piliers du commandement créent des zones d'ombre opérationnelles. La tendance du commandement à favoriser des sources démoniaques externes au détriment du renseignement direct des pourfendeurs est une source de frustration majeure.</p>
+            </div>
+
+            <div class="report-block">
+                <h3>VII. RENSEIGNEMENT DÉMONIAQUE (FUITES & INTERCEPTIONS)</h3>
+                <p>Les informations récemment récoltées auprès des cibles démoniaques (notamment parmi les rangs SS) indiquent que le Commandement est globalement perçu comme hautement « gênant » par l'ennemi. Deux profils focalisent tout particulièrement cette appréhension tactique : <strong>Kaede</strong> et <strong>Ayuumi</strong>. À l'inverse, <strong>Thar</strong> est actuellement la seule instance de commandement identifiée comme « non dangereuse » dans les informations récoltées de l'adversaire. Enfin, fait troublant, les interceptions précisent que si la moindre négociation ou discussion devait avoir lieu, l'ordre démoniaque privilégierait explicitement un entretien avec <strong>la Hinoe du Serpent, Kaede</strong>.</p>
+            </div>
+
+            <div class="report-block highlighted">
+                <h3>VIII. RECOMMANDATIONS STRATÉGIQUES</h3>
+                <ul class="recommendation-list">
+                    <li>
+                        <ion-icon name="chevron-forward"></ion-icon> 
+                        <div class="rec-text"><strong>Optimisation de la Communication</strong> : Établir un système de suivi plus rigoureux entre les gradés et le commandement.</div>
+                    </li>
+                    <li>
+                        <ion-icon name="chevron-forward"></ion-icon> 
+                        <div class="rec-text"><strong>Réorganisation du Terrain</strong> : Augmenter la fréquence des patrouilles et la présence visible des commandants au QG.</div>
+                    </li>
+                    <li>
+                        <ion-icon name="chevron-forward"></ion-icon> 
+                        <div class="rec-text"><strong>Simplification Tactique</strong> : Mettre en œuvre des stratégies plus directes et compréhensibles en situation d'urgence.</div>
+                    </li>
+                    <li>
+                        <ion-icon name="chevron-forward"></ion-icon> 
+                        <div class="rec-text"><strong>Responsabilisation</strong> : Déléguer davantage de responsabilités aux sous-gradés pour parfaire leur formation au commandement.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Commander Details Overlays Container -->
+    <div class="commander-details-container">
+            <!-- TAIZO -->
+            <section id="details-taizo" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/TAIZO.png" alt="Taizo">
+                        </div>
+                        <h2 class="serif-title">TAIZO</h2>
+                        <span class="details-rank">HINOE AMOUR</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Excellent pilier d'encadrement pour le corps des pourfendeurs. Sa présence constante et bienveillante auprès des bas gradés ainsi que de ses pairs en fait une forte source de soutien, indispensable pour maintenir la cohésion interne de l'Ordre.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Un manque marqué d'implication lors des confrontations externes majeures contre l'ordre démoniaque. Son absence fréquente lors des affrontements directs complexes prive la ligne de front d'un potentiel tactique important.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ZELIOS -->
+            <section id="details-zelios" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/ZELIOS IESADA.png" alt="Zelios">
+                        </div>
+                        <h2 class="serif-title">ZELIOS IESADA</h2>
+                        <span class="details-rank">HINOTO BRUME</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Expertise exceptionnelle en planification stratégique et formation. Son passé d'instructeur demeure un pilier fondamental de l'Ordre. Zellios excelle dans la préparation tactique à long terme et la transmission des savoirs fondamentaux.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Manque de proactivité dans l'encadrement des bas gradés. Bien que hautement qualifié, il ne se porte pas naturellement au-devant des recrues ou des unités inférieures. Ces dernières doivent systématiquement le solliciter pour bénéficier de son appui ou de son expertise tactique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- YUU -->
+            <section id="details-yuu" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/YUU FURUKAWA.png" alt="Yuu">
+                        </div>
+                        <h2 class="serif-title">YUU FURUKAWA</h2>
+                        <span class="details-rank">HINOE FLEUR</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Perçue comme l'élément le plus indispensable par les effectifs ("Meilleure Hinoto actuelle"). Sa gestion du bureau des missions est citée comme un modèle de rigueur. Présente pour n'importe quel problème, elle fonce sans crainte tout en gérant les priorités avec une rapidité exemplaire.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Un tempérament noté comme "impulsif" et prompt à l'action immédiate. Bien qu'efficace, cela peut parfois court-circuiter les chaînes de commandement plus lentes lors de déploiements conjoints.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KOSEI -->
+            <section id="details-kosei" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/KOSEI RAIJINSHIN.png" alt="Kosei">
+                        </div>
+                        <h2 class="serif-title">KOSEI RAIJINSHIN</h2>
+                        <span class="details-rank">HINOTO FOUDRE</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Élément utile au corps formateur, mais son apport global est sévèrement critiqué. Les unités rapportent des performances décevantes lors des simulations tactiques et une faible réactivité aux besoins urgents de commandement.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Rigueur administrative contestée. Des manques critiques dans la transmission d'informations clés ont été documentés. Qualifié de "totalement inutile" par plusieurs pourfendeurs en raison de son manque de communication systémique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- YURA -->
+            <section id="details-yura" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/YURA KATSURAGI.png" alt="Yura">
+                        </div>
+                        <h2 class="serif-title">YURA KATSURAGI</h2>
+                        <span class="details-rank">HINOTO FLAMME</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Forte implication opérationnelle relevée. Très proche des gradés et des unités de base, elle assure un relais d'information fluide. Son rôle de gérante de mission est salué pour sa proximité et sa disponibilité constante.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Tempérament perçu comme "enfantin" par certains pourfendeurs. Risque de sous-estimation de sa part face à des enjeux diplomatiques ou tactiques/action de haute complexité.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SHUN -->
+            <section id="details-shun" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/SHUN NOZEN.png" alt="Shun">
+                        </div>
+                        <h2 class="serif-title">SHUN NOZEN</h2>
+                        <span class="details-rank">HINOE FOUDRE</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Moteur stratégique indispensable. Réputé pour sa capacité à trouver des solutions adaptées, simples ou complexes, à n'importe quel problème de terrain. Ses entraînements sont parmi les plus suivis et respectés pour leur rigueur.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Aucune lacune ni point de vigilance particulier n'a été recensé. L'intégralité des retours du terrain confirme une maîtrise totale des enjeux tactiques et une gestion infaillible des unités sous son commandement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KAEDE -->
+            <section id="details-kaede" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/KAEDE IESADA.png" alt="Kaede">
+                        </div>
+                        <h2 class="serif-title">KAEDE IESADA</h2>
+                        <span class="details-rank">HINOE SERPENT</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Bouclier vital de l'Ordre (Record de présence remarquable). Excellente en diplomatie et en manœuvres de défense. Sa réactivité face aux menaces de rang SS permet de protéger les gradés et d'assurer la continuité du commandement en situation critique.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Son omniprésence sur le terrain et son soutien invariable auprès de l'ensemble des effectifs (bas gradés comme commandants) la soumettent à une charge opérationnelle exceptionnellement lourde. La seule préoccupation actuelle est le maintien de son endurance face à ce suremploi tactique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AYUUMI -->
+            <section id="details-ayuumi" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/AYUUMI IESADA.png" alt="Ayuumi">
+                        </div>
+                        <h2 class="serif-title">AYUUMI IESADA</h2>
+                        <span class="details-rank">HINOTO SERPENT</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Experte en défense statique et en repérage. Sa capacité à tenir une zone et à transmettre des corbeaux de renseignement precis est vitale pour la coordination des grandes batailles. Fiabilité tactique démontrée.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Cible prioritaire identifiée de l'ordre démoniaque. Des avertissements de renseignement (Kogetsu) indiquent des plans d'élimination ciblée visant spécifiquement sa personne. De plus, la Lune Supérieure 2 a émis un ordre de traque officiel sur sa tête, une traque qui ne prendra fin que lorsqu'il sera accompli.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TEMIRO -->
+            <section id="details-temiro" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/TEMIRO IESADA.png" alt="Temiro">
+                        </div>
+                        <h2 class="serif-title">TEMIRO IESADA</h2>
+                        <span class="details-rank">HINOTO SERPENT</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Animé par une rage froide et efficace. Temiro sait éliminer le problème à la racine directement lors des déploiements. Sa performance lors des Hinoto-oe est jugée particulièrement robuste.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Peu de reproches opérationnels sont émis par les pourfendeurs à son encontre. Le seul véritable point de vigilance soulevé par les effectifs concerne un manque de présence globale, les unités soulignant qu'il est très rarement aperçu par le reste des pourfendeurs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- THAR -->
+            <section id="details-thar" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/KAZEKO THAR.png" alt="Thar">
+                        </div>
+                        <h2 class="serif-title">KAZEKO THAR</h2>
+                        <span class="details-rank">HINOTO FLAMME</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Gérant logistique incontournable. Très actif pour les patrouilles et les appels de coordination. Prend le temps de discuter avec les pourfendeurs pour comprendre les besoins concrets du terrain.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Présence essentiellement concentrée sur la coordination au QG. Doit veiller à intensifier ses interventions de terrain pour maintenir sa légitimité opérationnelle vis-à-vis de la menace des démons.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MANA -->
+            <section id="details-mana" class="commander-details-overlay">
+                <div class="details-sheet">
+                    <div class="details-header">
+                        <div class="details-portrait">
+                            <img src="assets/MANA TOYAMA.png" alt="Mana">
+                        </div>
+                        <h2 class="serif-title">MANA TOYAMA</h2>
+                        <span class="details-rank">HINOTO VENT</span>
+                    </div>
+                    <div class="details-body">
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="analytics-outline"></ion-icon> ANALYSE DU RENSEIGNEMENT</h4>
+                            <div class="details-content">
+                                <p>Actuellement absente des registres opérationnels. Aucun déploiement récent documenté au cours des dernières phases de récolte d'informations.</p>
+                            </div>
+                        </div>
+
+                        <div class="details-column">
+                            <h4 class="details-section-title"><ion-icon name="warning-outline"></ion-icon> POINTS DE VIGILANCE</h4>
+                            <div class="details-content">
+                                <p>Incapacité prolongée suspectée. L'absence de ce commandant crée une faille dans le flanc du Souffle du Vent de l'Ordre, nécessitant une réaffectation d'urgence des ressources pour ce souffle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-footer">
+                        <a href="#" class="close-button"><ion-icon name="arrow-back-outline"></ion-icon> REVENIR AUX ARCHIVES</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
