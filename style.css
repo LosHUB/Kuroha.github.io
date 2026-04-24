@@ -52,7 +52,7 @@ body {
     background: url('https://raw.githubusercontent.com/IgorZastavnyy/mist-animation/master/img/mist.png');
     background-size: cover;
     opacity: 0.1;
-    
+
 }
 
 .mist-1 {
@@ -87,7 +87,7 @@ body {
     background-size: cover;
     background-position: center;
     opacity: 0.15;
-    
+
     z-index: -2;
     transition: transform 0.1s ease-out;
 }
@@ -166,8 +166,8 @@ body {
 .card-bg-overlay {
     position: absolute;
     inset: 0;
-    background: url('assets/card_base.png');
-    background-size: cover;
+    background: url('assets/card_base.png') 7px center;
+    background-size: 100% 100%;
     opacity: 0.05;
     pointer-events: none;
 }
@@ -191,7 +191,7 @@ body {
 
 .symbol-ring {
     width: 140px;
-    
+
     height: 140px;
     border: 2px solid var(--acc-teal);
     border-radius: 50%;
@@ -212,7 +212,7 @@ body {
 
 .manuscript-card h3 {
     font-family: var(--font-serif);
-    font-size: 32px;
+    font-size: 38px;
     letter-spacing: 5px;
     margin-bottom: 15px;
 }
@@ -232,11 +232,12 @@ body {
 }
 
 .description {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--text-secondary);
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto 40px;
     font-style: italic;
+    line-height: 1.7;
 }
 
 .btn-enter {
@@ -291,7 +292,7 @@ body {
     color: var(--text-secondary);
     letter-spacing: 2px;
     margin-top: 15px;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -302,13 +303,13 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 25px;
     align-items: stretch;
-    
+
 }
 
 .card-link {
     text-decoration: none;
     color: inherit;
-    display: block; 
+    display: block;
 }
 
 .commander-card {
@@ -318,10 +319,10 @@ body {
     position: relative;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: visible;
-    
+
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .commander-card::before {
@@ -335,10 +336,10 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.5;
-    
+
     pointer-events: none;
     z-index: 2;
-    
+
 }
 
 .commander-card::after {
@@ -410,7 +411,7 @@ body {
     position: relative;
     z-index: 1;
     flex: 1;
-    
+
 }
 
 .card-body p {
@@ -445,7 +446,7 @@ body {
     backdrop-filter: blur(15px);
     z-index: 9999;
     padding: 40px 5%;
-    display: none; 
+    display: none;
     align-items: center;
     justify-content: center;
     overflow-y: auto;
@@ -602,9 +603,19 @@ body {
 }
 
 @media (max-width: 768px) {
-    .details-body { grid-template-columns: 1fr; gap: 30px; }
-    .details-sheet { padding: 40px 20px; margin: 20px; }
-    .details-header h2 { font-size: 32px; }
+    .details-body {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .details-sheet {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+
+    .details-header h2 {
+        font-size: 32px;
+    }
 }
 
 
@@ -715,4 +726,124 @@ body {
 .recommendation-list li strong {
     color: #fff;
     margin-right: 5px;
+}
+
+/* =========================================
+   SECRET TRANSCRIPT STYLES (interception.html)
+   ========================================= */
+
+.secret-document {
+    background-color: #050505;
+}
+
+.alert-tag {
+    background-color: #3a0a0a !important;
+    color: #ff4d4d !important;
+    border: 1px solid #ff4d4d;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.2);
+}
+
+.red-pulse {
+    background-color: #ff4d4d !important;
+    box-shadow: 0 0 8px #ff4d4d !important;
+}
+
+.blur-text {
+    filter: blur(3px);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.blur-text:hover {
+    filter: blur(0);
+}
+
+.secret-card {
+    border: 1px solid rgba(255, 77, 77, 0.2) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 77, 77, 0.05) !important;
+}
+
+.secret-icon {
+    font-size: 3rem;
+    color: #ff4d4d;
+}
+
+.red-title {
+    color: #ff4d4d !important;
+    letter-spacing: 4px;
+}
+
+.red-divider {
+    background: linear-gradient(90deg, transparent, #ff4d4d, transparent) !important;
+}
+
+.italic-note {
+    font-style: italic;
+    color: #a0a0a0;
+}
+
+.transcript-section {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.dialogue-log {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.dialogue-block {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: rgba(15, 15, 18, 0.8);
+    border-left: 4px solid #444;
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+.speaker-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.speaker-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+/* Faction Specific Styles */
+.speaker-ecclesia {
+    border-left-color: #ff3333;
+    background: linear-gradient(90deg, rgba(50, 10, 10, 0.6) 0%, rgba(15, 15, 18, 0.8) 100%);
+}
+
+.speaker-ecclesia .speaker-name {
+    color: #ff4d4d;
+}
+
+.speaker-unknown {
+    border-left-color: #88ccff;
+    background: linear-gradient(90deg, rgba(10, 30, 50, 0.6) 0%, rgba(15, 15, 18, 0.8) 100%);
+}
+
+.speaker-unknown .speaker-name {
+    color: #88ccff;
+}
+
+.speaker-neutral {
+    border-left-color: #888;
+}
+
+.speaker-neutral .speaker-name {
+    color: #aaa;
 }
