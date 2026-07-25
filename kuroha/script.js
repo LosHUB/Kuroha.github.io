@@ -103,8 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkPassword(e) {
         if (e) e.preventDefault();
         const entered = (passInput ? passInput.value : '').trim().toLowerCase();
-        
-        if (entered === 'kuroha') {
+
+        // ⬇️ CHANGER LE MOT DE PASSE ICI ⬇️ (remplacer 'kuroha' par ton nouveau mot de passe)
+        if (entered === 'flaby') {
             if (passError) passError.style.opacity = '0';
             body.classList.remove('is-locked');
             body.classList.add('is-unlocked');
@@ -148,12 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- DRAWER TOGGLES ---
-    if(menuToggle) menuToggle.addEventListener('click', () => {
+    if (menuToggle) menuToggle.addEventListener('click', () => {
         chapterNav.classList.toggle('is-open');
     });
 
     if (closeNavBtn) {
-        if(closeNavBtn) closeNavBtn.addEventListener('click', () => {
+        if (closeNavBtn) closeNavBtn.addEventListener('click', () => {
             chapterNav.classList.remove('is-open');
         });
     }
@@ -174,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    if(editToggle) editToggle.addEventListener('click', () => {
+    if (editToggle) editToggle.addEventListener('click', () => {
         editModal.classList.add('is-active');
     });
 
@@ -182,8 +183,8 @@ document.addEventListener('DOMContentLoaded', () => {
         editModal.classList.remove('is-active');
     }
 
-    if(closeModalBtn) closeModalBtn.addEventListener('click', closeEditModal);
-    if(closeModalBackdrop) closeModalBackdrop.addEventListener('click', closeEditModal);
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeEditModal);
+    if (closeModalBackdrop) closeModalBackdrop.addEventListener('click', closeEditModal);
 
     // --- FACTION CONFIGURATIONS ---
     const factionData = {
@@ -293,9 +294,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const removeBtn = div.querySelector('.btn-remove-tech');
         if (removeBtn) {
             removeBtn.addEventListener('click', () => {
-            div.remove();
-            autoSave();
-            updateLiveView();
+                div.remove();
+                autoSave();
+                updateLiveView();
             });
         }
 
@@ -332,11 +333,11 @@ document.addEventListener('DOMContentLoaded', () => {
             name: charName.value,
             kanji: charKanji.value,
             age: charAge.value,
-            gender: charGender ? charGender.value: 'Femme',
-            physique: charPhysique ? charPhysique.value: '1m61 / 40 kg',
-            origin: charOrigin ? charOrigin.value: 'Orphenina',
-            clan: charClan ? charClan.value: 'Clan Iesada',
-            job: charJob ? charJob.value: 'Aucune (Enfant)',
+            gender: charGender ? charGender.value : 'Femme',
+            physique: charPhysique ? charPhysique.value : '1m61 / 40 kg',
+            origin: charOrigin ? charOrigin.value : 'Orphenina',
+            clan: charClan ? charClan.value : 'Clan Iesada',
+            job: charJob ? charJob.value : 'Aucune (Enfant)',
             faction: charFaction.value,
             rank: charRank.value,
             weapon: charWeapon.value,
@@ -367,11 +368,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const nameVal = charName.value.trim() || 'Kuroha Iesada';
         const kanjiVal = charKanji.value.trim() || '黒羽 家定';
         const ageVal = charAge.value.trim() || '18 ans';
-        const genderVal = charGender ? charGender.value.trim(): 'Femme';
-        const physiqueVal = charPhysique ? charPhysique.value.trim(): '1m61 / 40 kg';
-        const originVal = charOrigin ? charOrigin.value.trim(): 'Orphenina';
-        const clanVal = charClan ? charClan.value.trim(): 'Clan Iesada';
-        const jobVal = charJob ? charJob.value.trim(): 'Aucune (Enfant)';
+        const genderVal = charGender ? charGender.value.trim() : 'Femme';
+        const physiqueVal = charPhysique ? charPhysique.value.trim() : '1m61 / 40 kg';
+        const originVal = charOrigin ? charOrigin.value.trim() : 'Orphenina';
+        const clanVal = charClan ? charClan.value.trim() : 'Clan Iesada';
+        const jobVal = charJob ? charJob.value.trim() : 'Aucune (Enfant)';
         const factionVal = charFaction.value || 'Pourfendeur';
         const rankVal = charRank.value.trim() || 'Mizunoto';
         const weaponVal = charWeapon.value.trim() || 'Sabre Nichirin';
@@ -493,7 +494,7 @@ document.addEventListener('DOMContentLoaded', () => {
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 **📁 IDENTITÉ & ETAT CIVIL**
-> 👤 **Nom complet:** ${name} ${kanji ? `(${kanji})`: ''}
+> 👤 **Nom complet:** ${name} ${kanji ? `(${kanji})` : ''}
 > ⏳ **Âge:** ${age}
 > ⚔️ **Faction / Alignement:** ${faction}
 > 🎖️ **Grade / Rang RP:** ${rank}
@@ -552,20 +553,20 @@ ${lore}
     }
 
     // --- LISTENERS ---
-    if(charFaction) charFaction.addEventListener('change', () => {
+    if (charFaction) charFaction.addEventListener('change', () => {
         updateFactionUI();
         autoSave();
         updateLiveView();
     });
 
-    if(addTechBtn) addTechBtn.addEventListener('click', () => {
+    if (addTechBtn) addTechBtn.addEventListener('click', () => {
         addTechniqueRow();
         autoSave();
     });
 
-    if(copyDiscordBtn) copyDiscordBtn.addEventListener('click', copyToDiscord);
+    if (copyDiscordBtn) copyDiscordBtn.addEventListener('click', copyToDiscord);
 
-    if(clearBtn) clearBtn.addEventListener('click', () => {
+    if (clearBtn) clearBtn.addEventListener('click', () => {
         if (confirm("Réinitialiser entièrement la fiche ? (Toutes les données saisies seront effacées)")) {
             localStorage.removeItem('demonslayer_rp_lore_kuroiwa');
             loreForm.reset();
@@ -577,7 +578,7 @@ ${lore}
         }
     });
 
-    if(loreForm) loreForm.addEventListener('input', () => {
+    if (loreForm) loreForm.addEventListener('input', () => {
         autoSave();
         updateLiveView();
     });
