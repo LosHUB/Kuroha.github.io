@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Archives Kuroha Iesada , Gardienne de l'Ouroboros</title>
-  <meta name="description" content="Fiche et Récit d'Origine de Kuroha Iesada, Gardienne de l'Ouroboros (Ⅰ: La Malice).">
+  <meta name="description"
+    content="Fiche et Récit d'Origine de Kuroha Iesada, Gardienne de l'Ouroboros (Ⅰ: La Malice).">
 
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Cinzel+Decorative:wght@700&family=Inter:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Cinzel+Decorative:wght@700&family=Inter:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+    rel="stylesheet">
 
   <!-- AOS ANIMATIONS & STYLES -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,6 +23,7 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body class="is-locked">
 
   <!-- BACKGROUND MIST & ATMOSPHERE LAYERS -->
@@ -38,20 +43,25 @@
 
       <h1 id="entryTitle">Archives Kuroha Iesada</h1>
       <p class="entry__lead">Dossier individuel · Gardienne de l'Ouroboros (Ⅰ, La Malice)</p>
-      
-      <p class="entry__lead">Ce dossier consigne le Récit d'Origine et l'Évolution de Kuroha Iesada avant son entrée au sein des Pourfendeurs.</p>
+
+      <p class="entry__lead">Ce dossier consigne le Récit d'Origine et l'Évolution de Kuroha Iesada avant son entrée au
+        sein des Pourfendeurs.</p>
 
       <form id="passForm" style="display:flex; flex-direction:column; align-items:center; gap:12px; margin-top:10px;">
         <div style="position:relative; width: 100%; max-width: 320px;">
-          <input type="password" id="passInput" placeholder="Entrez le mot de passe..." autocomplete="off" style="width:100%; padding: 12px 18px; background: rgba(0,0,0,0.5); border: 1px solid rgba(11,197,234,0.3); border-radius: 6px; color: #fff; text-align: center; font-family: var(--font-sans); font-size: 14px; outline: none; transition: border-color 0.3s ease;">
+          <input type="password" id="passInput" placeholder="Entrez le mot de passe..." autocomplete="off"
+            style="width:100%; padding: 12px 18px; background: rgba(0,0,0,0.5); border: 1px solid rgba(11,197,234,0.3); border-radius: 6px; color: #fff; text-align: center; font-family: var(--font-sans); font-size: 14px; outline: none; transition: border-color 0.3s ease;">
         </div>
         <button class="primary-button" id="enter-site" type="submit">
           Consulter le Dossier →
         </button>
-        <p id="passError" style="color: #ff5555; font-size: 12px; margin: 0; min-height: 18px; opacity: 0; transition: opacity 0.3s ease;">Mot de passe incorrect</p>
+        <p id="passError"
+          style="color: #ff5555; font-size: 12px; margin: 0; min-height: 18px; opacity: 0; transition: opacity 0.3s ease;">
+          Mot de passe incorrect</p>
       </form>
 
-      <p class="eyebrow" style="opacity:0.35; font-size:10px; margin-top:10px;">Répertoire des Archives · Clan Iesada · Orphenina</p>
+      <p class="eyebrow" style="opacity:0.35; font-size:10px; margin-top:10px;">Répertoire des Archives · Clan Iesada ·
+        Orphenina</p>
     </div>
   </div>
 
@@ -75,7 +85,8 @@
         <ion-icon name="create-outline"></ion-icon>
         <span class="btn-label">Éditer</span>
       </button>
-      <button class="icon-button" id="menu-toggle" type="button" aria-expanded="false" aria-controls="chapter-nav" aria-label="Ouvrir le sommaire">
+      <button class="icon-button" id="menu-toggle" type="button" aria-expanded="false" aria-controls="chapter-nav"
+        aria-label="Ouvrir le sommaire">
         <ion-icon name="menu-outline"></ion-icon>
         <span class="btn-label">Sommaire</span>
       </button>
@@ -83,18 +94,18 @@
   </header>
 
   <!-- CHAPTER NAVIGATION DRAWER -->
-    <!-- NAVIGATION DRAWER -->
-    <!-- NAVIGATION DRAWER -->
+  <!-- NAVIGATION DRAWER -->
+  <!-- NAVIGATION DRAWER -->
   <nav class="chapter-nav" id="chapter-nav" aria-label="Chapitres">
     <div class="chapter-nav__header">
       <p>Sommaire du dossier</p>
       <button id="closeNavBtn" class="close-nav-btn"><ion-icon name="close-outline"></ion-icon></button>
     </div>
-    
+
     <div class="nav-section-title">DOSSIER PRINCIPAL</div>
     <a href="#ouverture" data-section="ouverture"><span>00</span>Présentation</a>
     <a href="#identite" data-section="identite"><span>01</span>Fiche &amp; Doctrine</a>
-    
+
     <div class="nav-section-title" style="margin-top: 15px;">SECTION 02 | RÉCIT D'ORIGINE</div>
     <a href="#recit-intro" class="sub-link"><span>—</span>Introduction | L'Ouroboros</a>
     <a href="#chapitre-1" class="sub-link"><span>01</span>Ch. I | Évolution vers le Prodige</a>
@@ -113,7 +124,8 @@
       <div class="hero__copy reveal">
         <p class="eyebrow" id="prevSubtitleTag">Récit d'Origine · Avant l'entrée chez les Pourfendeurs</p>
         <h1 id="prevHeroName">Kuroha<br><span>Iesada</span></h1>
-        <p class="hero__subtitle" id="prevQuote">« Écartée des Quatre Ombres qui franchirent l'épreuve ensemble, sa survie en solitaire complet l'a élevée au rang de Gardienne de la Malice. »</p>
+        <p class="hero__subtitle" id="prevQuote">« Écartée des Quatre Ombres qui franchirent l'épreuve ensemble, sa
+          survie en solitaire complet l'a élevée au rang de Gardienne de la Malice. »</p>
         <div class="hero__meta">
           <span id="prevKanjiMeta">黒羽 家定</span>
           <span id="prevFactionMeta">Titre, Gardienne de l'Ouroboros</span>
@@ -124,9 +136,9 @@
       <div class="hero__portrait reveal reveal--delay">
         <div class="portrait-frame">
           <img src="assets/logo_brume.png" alt="Portrait de Kuroha" id="prevPortraitImg">
-          
+
         </div>
-        
+
       </div>
       <div class="scroll-cue" aria-hidden="true"><span></span>Défiler</div>
     </section>
@@ -146,27 +158,79 @@
             <img src="assets/logo_brume.png" alt="Photo d'identité" id="prevIdentPhoto">
           </div>
           <dl>
-            <div><dt>Nom</dt><dd id="prevCardName">Kuroha Iesada</dd></div>
-            <div><dt>Kanji</dt><dd id="prevCardKanji">黒羽 家定</dd></div>
-            <div><dt>Titre d'Origine</dt><dd id="prevCardTitle">Gardienne de l'Ouroboros (Ⅰ, La Malice)</dd></div>
-            <div><dt>Âge / Sexe</dt><dd id="prevCardAge">18 ans (Femme)</dd></div>
-            <div><dt>Taille / Poids</dt><dd id="prevCardPhysique">1m61 / 40 kg</dd></div>
-            <div><dt>Lieu de Naissance</dt><dd id="prevCardOrigin">Orphenina</dd></div>
-            <div><dt>Clan</dt><dd id="prevCardClan">Clan Iesada (Anciens ninjas)</dd></div>
-            <div><dt>Père / Allégeance</dt><dd id="prevCardFather">Kurikara Iesada (Pilier du Serpent)</dd></div>
-            <div><dt>Profession antérieure</dt><dd id="prevCardJob">Soldat conditionnée (Enfant)</dd></div>
-            <div><dt>Épreuve Ultime</dt><dd id="prevCardTest">Survie Solitaire aux Quatre Ombres</dd></div>
+            <div>
+              <dt>Nom</dt>
+              <dd id="prevCardName">Kuroha Iesada</dd>
+            </div>
+            <div>
+              <dt>Kanji</dt>
+              <dd id="prevCardKanji">黒羽 家定</dd>
+            </div>
+            <div>
+              <dt>Titre d'Origine</dt>
+              <dd id="prevCardTitle">Gardienne de l'Ouroboros (Ⅰ, La Malice)</dd>
+            </div>
+            <div>
+              <dt>Âge / Sexe</dt>
+              <dd id="prevCardAge">18 ans (Femme)</dd>
+            </div>
+            <div>
+              <dt>Taille / Poids</dt>
+              <dd id="prevCardPhysique">1m61 / 40 kg</dd>
+            </div>
+            <div>
+              <dt>Lieu de Naissance</dt>
+              <dd id="prevCardOrigin">Orphenina</dd>
+            </div>
+            <div>
+              <dt>Clan</dt>
+              <dd id="prevCardClan">Clan Iesada (Anciens ninjas)</dd>
+            </div>
+            <div>
+              <dt>Père / Allégeance</dt>
+              <dd id="prevCardFather">Kurikara Iesada (Pilier du Serpent)</dd>
+            </div>
+            <div>
+              <dt>Profession antérieure</dt>
+              <dd id="prevCardJob">Soldat conditionnée (Enfant)</dd>
+            </div>
+            <div>
+              <dt>Épreuve Ultime</dt>
+              <dd id="prevCardTest">Survie Solitaire aux Quatre Ombres</dd>
+            </div>
           </dl>
         </article>
 
         <!-- TRAIT STACK (01 à 06) -->
         <div class="trait-stack reveal reveal--delay" id="prevTraitsContainer">
-          <article class="trait-card"><span>01</span><h3>Allégeance au Pilier du Serpent</h3><p>Soumission absolue envers son père Kurikara Iesada (Pilier du Serpent), autorité suprême de son protocole.</p></article>
-          <article class="trait-card"><span>02</span><h3>Conditionnement d'un Outil</h3><p>Élevée comme un soldat et façonnée comme un outil. Conditionnée à obéir et exécuter les ordres sans jamais laisser ses émotions dicter ses actes.</p></article>
-          <article class="trait-card"><span>03</span><h3>Voix Charmeuse &amp; Serpent</h3><p>Serpent apprivoisé au cou, voix douce et charmeuse contrastant avec la froideur de ses yeux rouges.</p></article>
-          <article class="trait-card"><span>04</span><h3>Discipline &amp; Mérite</h3><p>Juge les individus strictement sur leurs actes et leur efficacité. Le devoir passe avant tout sentiment.</p></article>
-          <article class="trait-card"><span>05</span><h3>Suppression Sans Récidive</h3><p>Préfère éliminer définitivement une menace plutôt que de lui accorder une rédemption risquée.</p></article>
-          <article class="trait-card"><span>06</span><h3>Responsabilité Tactique</h3><p>Ne cherche pas le pouvoir, mais assume naturellement le commandement lorsque ses capacités le réclament.</p></article>
+          <article class="trait-card"><span>01</span>
+            <h3>Allégeance au Pilier du Serpent</h3>
+            <p>Soumission absolue envers son père Kurikara Iesada (Pilier du Serpent), autorité suprême de son
+              protocole.</p>
+          </article>
+          <article class="trait-card"><span>02</span>
+            <h3>Conditionnement d'un Outil</h3>
+            <p>Élevée comme un soldat et façonnée comme un outil. Conditionnée à obéir et exécuter les ordres sans
+              jamais laisser ses émotions dicter ses actes.</p>
+          </article>
+          <article class="trait-card"><span>03</span>
+            <h3>Voix Charmeuse &amp; Serpent</h3>
+            <p>Serpent apprivoisé au cou, voix douce et charmeuse contrastant avec la froideur de ses yeux rouges.</p>
+          </article>
+          <article class="trait-card"><span>04</span>
+            <h3>Discipline &amp; Mérite</h3>
+            <p>Juge les individus strictement sur leurs actes et leur efficacité. Le devoir passe avant tout sentiment.
+            </p>
+          </article>
+          <article class="trait-card"><span>05</span>
+            <h3>Suppression Sans Récidive</h3>
+            <p>Préfère éliminer définitivement une menace plutôt que de lui accorder une rédemption risquée.</p>
+          </article>
+          <article class="trait-card"><span>06</span>
+            <h3>Responsabilité Tactique</h3>
+            <p>Ne cherche pas le pouvoir, mais assume naturellement le commandement lorsque ses capacités le réclament.
+            </p>
+          </article>
         </div>
       </div>
 
@@ -176,12 +240,17 @@
           <p class="eyebrow">Philosophie et Protocoles</p>
           <h3>La Doctrine Iesada</h3>
         </div>
-        <p>Conditionnée au sein du clan d'anciens ninjas Iesada sous la marque de la malédiction, sa loyauté répond à des règles strictes.</p>
+        <p>Conditionnée au sein du clan d'anciens ninjas Iesada sous la marque de la malédiction, sa loyauté répond à
+          des règles strictes.</p>
         <ul>
-          <li><b>Hiérarchie absolue</b><span id="prevHabit1">1. Kurikara Iesada (Père/Pilier du Serpent), 2. Pilier de la Brume.</span></li>
-          <li><b>Vision de la mission</b><span id="prevHabit2">Accomplir chaque ordre avec une efficacité chirurgicale pour satisfaire son père.</span></li>
-          <li><b>Concept de rédemption</b><span id="prevHabit3">L'éradication définitive des menaces prime sur les secondes chances.</span></li>
-          <li><b>Rapport au pouvoir</b><span id="prevHabit4">Legs naturel du commandement basé sur le mérite et la compétence pure.</span></li>
+          <li><b>Hiérarchie absolue</b><span id="prevHabit1">1. Kurikara Iesada (Père/Pilier du Serpent), 2. Pilier de
+              la Brume.</span></li>
+          <li><b>Vision de la mission</b><span id="prevHabit2">Accomplir chaque ordre avec une efficacité chirurgicale
+              pour satisfaire son père.</span></li>
+          <li><b>Concept de rédemption</b><span id="prevHabit3">L'éradication définitive des menaces prime sur les
+              secondes chances.</span></li>
+          <li><b>Rapport au pouvoir</b><span id="prevHabit4">Legs naturel du commandement basé sur le mérite et la
+              compétence pure.</span></li>
         </ul>
       </div>
     </section>
@@ -192,228 +261,460 @@
       <div class="chapter__aside reveal">
         <p class="chapter__label">Récit d'Origine</p>
         <h2>L'Évolution vers<br>le Prodige</h2>
-        <div class="location-stamp"><span>Lignage</span><b>Clan Iesada · Orphenina</b><small>Projet Prodige · Marque du Pourfendeur</small></div>
+        <div class="location-stamp"><span>Lignage</span><b>Clan Iesada · Orphenina</b><small>Projet Prodige · Marque du
+            Pourfendeur</small></div>
       </div>
       <article class="chapter__body prose reveal reveal--delay" id="prevLoreContainer">
 
-                                <!-- INTRODUCTION ENRICHIE -->
+        <!-- INTRODUCTION ENRICHIE -->
         <div id="recit-intro"></div>
-        <div style="margin-bottom: 40px; padding: 28px 32px; border: 1px solid rgba(11,197,234,0.25); border-radius: 8px; background: rgba(11,197,234,0.04);">
-          <p style="margin:0 0 16px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--acc-teal); font-weight: 600;">L'Ouroboros | Éligibilité, Échec Initial &amp; Élévation Solitaire</p>
-          
-          <p style="margin:0 0 16px; color: rgba(200,220,220,0.85); line-height:1.85;">Au sein de l'organisation, l'Ordre reposait sur la dualité fondamentale entre deux piliers, les <strong>Porte Serments</strong> (guidées par la dévotion et le devoir de protection, incarnées par <em>Ⅰ | La Dévouée, Ⅱ | La Silencieuse et Ⅲ | La Possessive</em>) et les <strong>Quatre Ombres de l'Ouroboros</strong> (consacrées au sacrifice ultime, incarnées par <em>Ⅰ | La Ferveur Dévorante, Ⅱ | La Loyauté Tragique, Ⅲ | La Dépendance Absolue et Ⅳ | La Protectrice Silencieuse</em>).</p>
-          
-          <p style="margin:0 0 16px; color: rgba(200,220,220,0.85); line-height:1.85;">Destinée initialement aux rangs des Quatre Ombres sous les lois strictes de leur Pacte, Kuroha fut d'abord qualifiée d'échec et écartée de leur épreuve collective. Là où les Ombres franchirent leur sélection ensemble en groupe, Kuroha fut <strong>l'unique exception contrainte d'affronter l'épreuve de survie ultime en solitaire complet</strong>, sans aucun soutien ni camarade pour partager le fardeau.</p>
+        <div
+          style="margin-bottom: 40px; padding: 28px 32px; border: 1px solid rgba(11,197,234,0.25); border-radius: 8px; background: rgba(11,197,234,0.04);">
+          <p
+            style="margin:0 0 16px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--acc-teal); font-weight: 600;">
+            L'Ouroboros | Éligibilité, Échec Initial &amp; Élévation Solitaire</p>
 
-          <p style="margin:0 0 16px; color: rgba(200,220,220,0.85); line-height:1.85;">Au cœur de cet isolement forcé, sa maîtrise chirurgicale de la dissimulation, sa résistance physique d'exception et son sang froid absolu s'exprimèrent pleinement. En triomphant seule de cette épreuve d'une difficulté extrême, elle s'éleva au titre suprême de <strong>Gardienne de l'Ouroboros (Ⅰ | La Malice)</strong>, devenant l'une des rares personnes vivantes capables de supporter la pression du projet du Prodige Iesada.</p>
-          
-          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(11,197,234,0.15); font-size: 13px; color: rgba(200,220,220,0.7); font-style: italic;">
-            « Les Porte Serments protégeaient. Les Ombres sacrifient. Là où les premières veillaient, la Gardienne de la Malice s'élève au dessus du néant. »
+          <p style="margin:0 0 16px; color: rgba(200,220,220,0.85); line-height:1.85;">Au sein de l'organisation,
+            l'Ordre reposait sur la dualité fondamentale entre deux piliers, les <strong>Porte Serments</strong>
+            (guidées par la dévotion et le devoir de protection, incarnées par <em>Ⅰ | La Dévouée, Ⅱ | La Silencieuse et
+              Ⅲ | La Possessive</em>) et les <strong>Quatre Ombres de l'Ouroboros</strong> (consacrées au sacrifice
+            ultime, incarnées par <em>Ⅰ | La Ferveur Dévorante, Ⅱ | La Loyauté Tragique, Ⅲ | La Dépendance Absolue et Ⅳ
+              | La Protectrice Silencieuse</em>).</p>
+
+          <p style="margin:0 0 16px; color: rgba(200,220,220,0.85); line-height:1.85;">Destinée initialement aux rangs
+            des Quatre Ombres sous les lois strictes de leur Pacte, Kuroha fut d'abord qualifiée d'échec et écartée de
+            leur épreuve collective. Là où les Ombres franchirent leur sélection ensemble en groupe, Kuroha fut
+            <strong>l'unique exception contrainte d'affronter l'épreuve de survie ultime en solitaire complet</strong>,
+            sans aucun soutien ni camarade pour partager le fardeau.</p>
+
+          <p style="margin:0 0 16px; color: rgba(200,220,220,0.85); line-height:1.85;">Au cœur de cet isolement forcé,
+            sa maîtrise chirurgicale de la dissimulation, sa résistance physique d'exception et son sang froid absolu
+            s'exprimèrent pleinement. En triomphant seule de cette épreuve d'une difficulté extrême, elle s'éleva au
+            titre suprême de <strong>Gardienne de l'Ouroboros (Ⅰ | La Malice)</strong>, devenant l'une des rares
+            personnes vivantes capables de supporter la pression du projet du Prodige Iesada.</p>
+
+          <div
+            style="margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(11,197,234,0.15); font-size: 13px; color: rgba(200,220,220,0.7); font-style: italic;">
+            « Les Porte Serments protégeaient. Les Ombres sacrifient. Là où les premières veillaient, la Gardienne de la
+            Malice s'élève au dessus du néant. »
           </div>
         </div>
 
         <h3 id="chapitre-1">Chapitre I | L'Histoire d'une Évolution vers le Prodige</h3>
-        <p class="dropcap" id="prevLoreBody">Avant de porter le nom d'Iesada, Kuroha n'était qu'une Pourfendeuse parmi tant d'autres. Elle ne possédait aucune origine prestigieuse, aucune place déjà définie dans une grande lignée, ni aucun héritage qui aurait pu lui offrir une quelconque reconnaissance. Sa valeur ne fut jamais déterminée par son nom, mais uniquement par ce qu'elle était capable de démontrer à travers ses actes.</p>
+        <p class="dropcap" id="prevLoreBody">Avant de porter le nom d'Iesada, Kuroha n'était qu'une Pourfendeuse parmi
+          tant d'autres. Elle ne possédait aucune origine prestigieuse, aucune place déjà définie dans une grande
+          lignée, ni aucun héritage qui aurait pu lui offrir une quelconque reconnaissance. Sa valeur ne fut jamais
+          déterminée par son nom, mais uniquement par ce qu'elle était capable de démontrer à travers ses actes.</p>
 
-        <p>Dès ses premiers pas au sein de l'Ordre des Pourfendeurs, certains détails commencèrent néanmoins à attirer l'attention. Là où beaucoup progressaient avec le temps, Kuroha semblait évoluer d'une manière différente. Son apprentissage était rapide, sa capacité d'adaptation impressionnante et son comportement particulièrement différent des autres recrues. Elle ne cherchait pas à impressionner, ni à obtenir une reconnaissance quelconque. Elle exécutait, observait et analysait.</p>
+        <p>Dès ses premiers pas au sein de l'Ordre des Pourfendeurs, certains détails commencèrent néanmoins à attirer
+          l'attention. Là où beaucoup progressaient avec le temps, Kuroha semblait évoluer d'une manière différente. Son
+          apprentissage était rapide, sa capacité d'adaptation impressionnante et son comportement particulièrement
+          différent des autres recrues. Elle ne cherchait pas à impressionner, ni à obtenir une reconnaissance
+          quelconque. Elle exécutait, observait et analysait.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">Chaque échec devenait une donnée à corriger.<br>Chaque erreur devenait une faiblesse à éliminer.<br>Chaque affrontement représentait une nouvelle possibilité d'apprentissage.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">
+          Chaque échec devenait une donnée à corriger.<br>Chaque erreur devenait une faiblesse à éliminer.<br>Chaque
+          affrontement représentait une nouvelle possibilité d'apprentissage.</p>
 
-        <p>Ce qui distinguait Kuroha n'était pas uniquement sa capacité au combat, mais sa manière de réfléchir. Elle ne voyait pas les situations comme de simples affrontements, mais comme des problèmes nécessitant une solution optimale. Elle cherchait constamment à comprendre les raisons derrière chaque décision, chaque mouvement et chaque conséquence.</p>
+        <p>Ce qui distinguait Kuroha n'était pas uniquement sa capacité au combat, mais sa manière de réfléchir. Elle ne
+          voyait pas les situations comme de simples affrontements, mais comme des problèmes nécessitant une solution
+          optimale. Elle cherchait constamment à comprendre les raisons derrière chaque décision, chaque mouvement et
+          chaque conséquence.</p>
 
-        <p>Avec le temps, cette mentalité attira l'attention de personnes capables de reconnaître son potentiel. Parmi elles se trouvait le clan Iesada.</p>
+        <p>Avec le temps, cette mentalité attira l'attention de personnes capables de reconnaître son potentiel. Parmi
+          elles se trouvait le clan Iesada.</p>
 
-        <p>Le clan Iesada n'était pas une famille qui accordait son nom facilement. Porter ce nom représentait bien plus qu'une appartenance. Il représentait une philosophie, une discipline et une exigence permanente envers soi même. Pour eux, un véritable guerrier ne se définissait pas uniquement par sa force, mais par sa capacité à contrôler chaque aspect de son existence.</p>
+        <p>Le clan Iesada n'était pas une famille qui accordait son nom facilement. Porter ce nom représentait bien plus
+          qu'une appartenance. Il représentait une philosophie, une discipline et une exigence permanente envers soi
+          même. Pour eux, un véritable guerrier ne se définissait pas uniquement par sa force, mais par sa capacité à
+          contrôler chaque aspect de son existence.</p>
 
-        <blockquote id="prevLoreQuote">La puissance sans contrôle n'était qu'une faiblesse.<br>Le talent sans discipline n'était qu'un potentiel gâché.<br>L'émotion sans maîtrise était une faille.</blockquote>
+        <blockquote id="prevLoreQuote">La puissance sans contrôle n'était qu'une faiblesse.<br>Le talent sans discipline
+          n'était qu'un potentiel gâché.<br>L'émotion sans maîtrise était une faille.</blockquote>
 
-        <p>Lorsque le clan observa Kuroha, ils ne virent pas une combattante parfaite. Ils virent quelque chose de plus rare, une personne capable de devenir quelque chose qui dépassait les limites habituelles.</p>
+        <p>Lorsque le clan observa Kuroha, ils ne virent pas une combattante parfaite. Ils virent quelque chose de plus
+          rare, une personne capable de devenir quelque chose qui dépassait les limites habituelles.</p>
 
-        <p>Cependant, cette reconnaissance ne fut pas immédiate. Kuroha dut d'abord prouver qu'elle possédait les qualités nécessaires pour porter ce nom. Elle fut observée dans ses missions, dans ses décisions et dans sa manière de réagir lorsque les situations devenaient difficiles.</p>
+        <p>Cependant, cette reconnaissance ne fut pas immédiate. Kuroha dut d'abord prouver qu'elle possédait les
+          qualités nécessaires pour porter ce nom. Elle fut observée dans ses missions, dans ses décisions et dans sa
+          manière de réagir lorsque les situations devenaient difficiles.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Le clan ne cherchait pas une personne incapable de ressentir.<br>Il cherchait une personne capable de ressentir sans jamais perdre le contrôle.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Le clan ne cherchait pas une personne incapable de ressentir.<br>Il cherchait une personne capable de
+          ressentir sans jamais perdre le contrôle.</p>
 
-        <p>Car selon les enseignements des Iesada, la véritable force ne résidait pas dans l'absence d'émotion, mais dans la capacité à rester maître de soi même malgré celles ci.</p>
+        <p>Car selon les enseignements des Iesada, la véritable force ne résidait pas dans l'absence d'émotion, mais
+          dans la capacité à rester maître de soi même malgré celles ci.</p>
 
-        <p>Après de nombreuses observations, Kuroha fut finalement reconnue comme une Iesada alors qu'elle portait déjà le rang de <strong>Kanoe</strong> parmi les Pourfendeurs. Cette reconnaissance ne représentait pas une récompense pour ses accomplissements passés, mais plutôt l'acceptation d'un potentiel que le clan souhaitait désormais développer.</p>
+        <p>Après de nombreuses observations, Kuroha fut finalement reconnue comme une Iesada alors qu'elle portait déjà
+          le rang de <strong>Kanoe</strong> parmi les Pourfendeurs. Cette reconnaissance ne représentait pas une
+          récompense pour ses accomplissements passés, mais plutôt l'acceptation d'un potentiel que le clan souhaitait
+          désormais développer.</p>
 
         <p>À partir de ce moment, son existence prit une nouvelle direction.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85);">Elle ne devait plus seulement devenir une bonne Pourfendeuse.<br>Elle devait devenir une représentation des idéaux Iesada.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85);">
+          Elle ne devait plus seulement devenir une bonne Pourfendeuse.<br>Elle devait devenir une représentation des
+          idéaux Iesada.</p>
 
-        <p>Chaque entraînement devint plus exigeant. Chaque limite atteinte devenait une nouvelle base à dépasser. Le clan ne cherchait pas à créer une simple guerrière, mais un individu capable d'approcher un niveau rarement atteint.</p>
+        <p>Chaque entraînement devint plus exigeant. Chaque limite atteinte devenait une nouvelle base à dépasser. Le
+          clan ne cherchait pas à créer une simple guerrière, mais un individu capable d'approcher un niveau rarement
+          atteint.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Le but n'était pas de créer une arme dépourvue d'humanité.<br>Le but était de créer une personne capable d'utiliser chaque aspect de son être comme une arme.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Le but n'était pas de créer une arme dépourvue d'humanité.<br>Le but était de créer une personne capable
+          d'utiliser chaque aspect de son être comme une arme.</p>
 
         <h3 id="chapitre-2" style="margin-top: 40px;">Chapitre II | Le Projet du Prodige Iesada</h3>
-        <p>La reconnaissance du clan Iesada ne marqua pas la fin du parcours de Kuroha. Au contraire, elle représenta le début d'une nouvelle étape. Être reconnue comme une Iesada ne signifiait pas qu'elle avait atteint un sommet, mais qu'elle venait d'obtenir l'accès à un chemin que très peu de personnes étaient capables d'emprunter.</p>
+        <p>La reconnaissance du clan Iesada ne marqua pas la fin du parcours de Kuroha. Au contraire, elle représenta le
+          début d'une nouvelle étape. Être reconnue comme une Iesada ne signifiait pas qu'elle avait atteint un sommet,
+          mais qu'elle venait d'obtenir l'accès à un chemin que très peu de personnes étaient capables d'emprunter.</p>
 
-        <p>Le clan ne cherchait pas à créer une simple combattante compétente. Des combattants talentueux existaient déjà parmi les Pourfendeurs. Des personnes capables de manier une lame, d'utiliser un souffle ou d'éliminer des démons avec efficacité n'étaient pas rares. Ce que les Iesada recherchaient était différent. Ils voulaient démontrer qu'un être humain pouvait, par la discipline, l'entraînement et une maîtrise absolue de lui même, repousser les limites naturelles qui lui étaient imposées.</p>
+        <p>Le clan ne cherchait pas à créer une simple combattante compétente. Des combattants talentueux existaient
+          déjà parmi les Pourfendeurs. Des personnes capables de manier une lame, d'utiliser un souffle ou d'éliminer
+          des démons avec efficacité n'étaient pas rares. Ce que les Iesada recherchaient était différent. Ils voulaient
+          démontrer qu'un être humain pouvait, par la discipline, l'entraînement et une maîtrise absolue de lui même,
+          repousser les limites naturelles qui lui étaient imposées.</p>
 
         <p>Kuroha devint alors considérée comme un potentiel candidat au <strong>Projet du Prodige Iesada</strong>.</p>
 
-        <p>Ce projet n'avait pas pour objectif de créer la personne la plus puissante par la simple accumulation de force. La puissance brute était jugée insuffisante. Une force sans contrôle pouvait mener à l'échec, une vitesse sans précision pouvait devenir inutile, et un esprit incapable de rester stable dans les situations critiques représentait une faiblesse. L'objectif était de créer un individu capable d'exceller dans chaque domaine nécessaire à un véritable maître de guerre.</p>
+        <p>Ce projet n'avait pas pour objectif de créer la personne la plus puissante par la simple accumulation de
+          force. La puissance brute était jugée insuffisante. Une force sans contrôle pouvait mener à l'échec, une
+          vitesse sans précision pouvait devenir inutile, et un esprit incapable de rester stable dans les situations
+          critiques représentait une faiblesse. L'objectif était de créer un individu capable d'exceller dans chaque
+          domaine nécessaire à un véritable maître de guerre.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">Le corps.<br>L'esprit.<br>L'analyse.<br>La discipline.<br>La volonté.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">
+          Le corps.<br>L'esprit.<br>L'analyse.<br>La discipline.<br>La volonté.</p>
 
-        <p>Chaque aspect de Kuroha devait être développé jusqu'à son potentiel maximal. Son entraînement ne se limita donc plus uniquement au maniement de son sabre ou à la maîtrise de son souffle. Elle fut poussée à comprendre chaque élément qui composait un combattant.</p>
+        <p>Chaque aspect de Kuroha devait être développé jusqu'à son potentiel maximal. Son entraînement ne se limita
+          donc plus uniquement au maniement de son sabre ou à la maîtrise de son souffle. Elle fut poussée à comprendre
+          chaque élément qui composait un combattant.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">La manière dont son corps réagissait sous la fatigue.<br>La façon dont son esprit traitait une information.<br>La capacité à prendre une décision en quelques secondes.<br>La gestion de la peur.<br>La résistance à la douleur.<br>La concentration malgré la pression.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          La manière dont son corps réagissait sous la fatigue.<br>La façon dont son esprit traitait une
+          information.<br>La capacité à prendre une décision en quelques secondes.<br>La gestion de la peur.<br>La
+          résistance à la douleur.<br>La concentration malgré la pression.</p>
 
-        <p>Pour le clan Iesada, une situation difficile n'était pas un obstacle à éviter. Elle représentait une occasion d'observer les limites actuelles d'un individu afin de les repousser. Ainsi, Kuroha fut progressivement confrontée à des situations toujours plus exigeantes. Chaque épreuve avait une raison précise, il ne s'agissait jamais simplement de la faire souffrir ou de tester sa résistance. Chaque difficulté avait pour but d'identifier une faiblesse, puis de la transformer en une force.</p>
+        <p>Pour le clan Iesada, une situation difficile n'était pas un obstacle à éviter. Elle représentait une occasion
+          d'observer les limites actuelles d'un individu afin de les repousser. Ainsi, Kuroha fut progressivement
+          confrontée à des situations toujours plus exigeantes. Chaque épreuve avait une raison précise, il ne
+          s'agissait jamais simplement de la faire souffrir ou de tester sa résistance. Chaque difficulté avait pour but
+          d'identifier une faiblesse, puis de la transformer en une force.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Si son endurance était insuffisante, son corps devait être renforcé.<br>Si son analyse était trop lente, son esprit devait être entraîné.<br>Si une émotion influençait son jugement, elle devait apprendre à la contrôler.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Si son endurance était insuffisante, son corps devait être renforcé.<br>Si son analyse était trop lente, son
+          esprit devait être entraîné.<br>Si une émotion influençait son jugement, elle devait apprendre à la contrôler.
+        </p>
 
-        <p>Rien ne devait être laissé au hasard. Au fil du temps, Kuroha commença à développer une manière de fonctionner différente de la majorité des Pourfendeurs. Elle ne se contentait plus d'apprendre une technique. Elle cherchait à comprendre son principe, son origine et toutes les possibilités qu'elle pouvait offrir.</p>
+        <p>Rien ne devait être laissé au hasard. Au fil du temps, Kuroha commença à développer une manière de
+          fonctionner différente de la majorité des Pourfendeurs. Elle ne se contentait plus d'apprendre une technique.
+          Elle cherchait à comprendre son principe, son origine et toutes les possibilités qu'elle pouvait offrir.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Un mouvement observé pouvait devenir un mouvement reproduit.<br>Une erreur commise pouvait devenir une règle supplémentaire.<br>Une défaite pouvait devenir une étape nécessaire vers une future victoire.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Un mouvement observé pouvait devenir un mouvement reproduit.<br>Une erreur commise pouvait devenir une règle
+          supplémentaire.<br>Une défaite pouvait devenir une étape nécessaire vers une future victoire.</p>
 
-        <p>Son apprentissage devint progressivement presque méthodique. Chaque expérience était enregistrée, analysée et intégrée. C'est durant cette période que son entraînement mental atteignit un niveau exceptionnel. Le clan Iesada considérait que la mémoire était une arme au même titre qu'une lame. Un guerrier qui oubliait ses erreurs était condamné à les répéter. Un guerrier capable de conserver chaque détail possédait un avantage permanent.</p>
+        <p>Son apprentissage devint progressivement presque méthodique. Chaque expérience était enregistrée, analysée et
+          intégrée. C'est durant cette période que son entraînement mental atteignit un niveau exceptionnel. Le clan
+          Iesada considérait que la mémoire était une arme au même titre qu'une lame. Un guerrier qui oubliait ses
+          erreurs était condamné à les répéter. Un guerrier capable de conserver chaque détail possédait un avantage
+          permanent.</p>
 
-        <p>Kuroha fut donc entraînée à repousser les limites de sa mémoire. Elle apprit à retenir des informations avec une précision inhabituelle. Des mouvements, des paroles, des visages, des stratégies, des environnements entiers pouvaient être enregistrés dans son esprit avec une fidélité impressionnante. Son cerveau devint progressivement un outil d'analyse constant. Elle n'oubliait pas facilement. Chaque adversaire rencontré pouvait être étudié à nouveau. Chaque combat pouvait être réexaminé. Chaque erreur pouvait être corrigée.</p>
+        <p>Kuroha fut donc entraînée à repousser les limites de sa mémoire. Elle apprit à retenir des informations avec
+          une précision inhabituelle. Des mouvements, des paroles, des visages, des stratégies, des environnements
+          entiers pouvaient être enregistrés dans son esprit avec une fidélité impressionnante. Son cerveau devint
+          progressivement un outil d'analyse constant. Elle n'oubliait pas facilement. Chaque adversaire rencontré
+          pouvait être étudié à nouveau. Chaque combat pouvait être réexaminé. Chaque erreur pouvait être corrigée.</p>
 
-        <p>Cette capacité ne fit pas d'elle une personne incapable de se tromper. Même avec une mémoire exceptionnelle, elle pouvait toujours prendre de mauvaises décisions. Cependant, la différence était qu'une erreur commise une première fois avait beaucoup moins de chances d'être répétée. Le clan voyait en elle une évolution particulière. Là où certains combattants devenaient puissants grâce à une grande force naturelle, Kuroha progressait grâce à une capacité d'adaptation permanente.</p>
+        <p>Cette capacité ne fit pas d'elle une personne incapable de se tromper. Même avec une mémoire exceptionnelle,
+          elle pouvait toujours prendre de mauvaises décisions. Cependant, la différence était qu'une erreur commise une
+          première fois avait beaucoup moins de chances d'être répétée. Le clan voyait en elle une évolution
+          particulière. Là où certains combattants devenaient puissants grâce à une grande force naturelle, Kuroha
+          progressait grâce à une capacité d'adaptation permanente.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85); font-style:italic;">Elle n'était pas née comme un prodige.<br>Elle était en train d'en devenir un.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85); font-style:italic;">
+          Elle n'était pas née comme un prodige.<br>Elle était en train d'en devenir un.</p>
 
 
         <h3 id="chapitre-3" style="margin-top: 40px;">Chapitre III | L'Entraînement de la Mémoire Absolue</h3>
-        <p>Parmi toutes les disciplines imposées par le clan Iesada, l'entraînement de la mémoire fut certainement l'une des plus longues et des plus exigeantes. Pour eux, un combattant ne devait pas seulement être capable d'agir dans l'instant présent. Il devait être capable de comprendre, d'apprendre et de conserver chaque expérience afin de ne jamais redevenir la même personne après un affrontement.</p>
+        <p>Parmi toutes les disciplines imposées par le clan Iesada, l'entraînement de la mémoire fut certainement l'une
+          des plus longues et des plus exigeantes. Pour eux, un combattant ne devait pas seulement être capable d'agir
+          dans l'instant présent. Il devait être capable de comprendre, d'apprendre et de conserver chaque expérience
+          afin de ne jamais redevenir la même personne après un affrontement.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">Une lame pouvait être brisée.<br>Un corps pouvait être affaibli.<br>Mais un esprit parfaitement entraîné pouvait accumuler une quantité infinie d'informations et devenir une arme qui évoluait constamment.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">
+          Une lame pouvait être brisée.<br>Un corps pouvait être affaibli.<br>Mais un esprit parfaitement entraîné
+          pouvait accumuler une quantité infinie d'informations et devenir une arme qui évoluait constamment.</p>
 
-        <p>C'est avec cette philosophie que Kuroha commença un entraînement destiné à repousser les limites naturelles de sa mémoire.</p>
+        <p>C'est avec cette philosophie que Kuroha commença un entraînement destiné à repousser les limites naturelles
+          de sa mémoire.</p>
 
-        <p>Au début, les exercices semblaient simples. Retenir des textes, mémoriser des cartes, reconnaître des visages, reproduire des mouvements observés. Pourtant, ces exercices devinrent rapidement beaucoup plus complexes. Le clan ne cherchait pas seulement à développer une bonne mémoire. Il cherchait à transformer la mémoire de Kuroha en un véritable système d'analyse permanent.</p>
+        <p>Au début, les exercices semblaient simples. Retenir des textes, mémoriser des cartes, reconnaître des
+          visages, reproduire des mouvements observés. Pourtant, ces exercices devinrent rapidement beaucoup plus
+          complexes. Le clan ne cherchait pas seulement à développer une bonne mémoire. Il cherchait à transformer la
+          mémoire de Kuroha en un véritable système d'analyse permanent.</p>
 
         <p>Elle fut entraînée à observer chaque détail d'un environnement dès son arrivée dans un lieu.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">La position des objets.<br>Les différentes sorties possibles.<br>Les habitudes des personnes présentes.<br>Les sons environnants.<br>Les changements subtils dans le comportement d'un individu.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          La position des objets.<br>Les différentes sorties possibles.<br>Les habitudes des personnes présentes.<br>Les
+          sons environnants.<br>Les changements subtils dans le comportement d'un individu.</p>
 
-        <p>Chaque élément devait pouvoir être enregistré et réutilisé. L'objectif était simple, ne jamais être aveugle face à une situation. Là où une personne ordinaire pouvait ne retenir qu'une impression générale, Kuroha devait être capable de reconstruire une scène entière dans son esprit.</p>
+        <p>Chaque élément devait pouvoir être enregistré et réutilisé. L'objectif était simple, ne jamais être aveugle
+          face à une situation. Là où une personne ordinaire pouvait ne retenir qu'une impression générale, Kuroha
+          devait être capable de reconstruire une scène entière dans son esprit.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Une conversation entendue plusieurs jours auparavant pouvait être répétée avec précision.<br>Un adversaire affronté une seule fois pouvait être étudié de nouveau.<br>Une erreur commise lors d'un combat pouvait être analysée encore et encore jusqu'à ce qu'une solution soit trouvée.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Une conversation entendue plusieurs jours auparavant pouvait être répétée avec précision.<br>Un adversaire
+          affronté une seule fois pouvait être étudié de nouveau.<br>Une erreur commise lors d'un combat pouvait être
+          analysée encore et encore jusqu'à ce qu'une solution soit trouvée.</p>
 
-        <p>Cependant, développer une telle capacité nécessitait également d'apprendre à contrôler son propre esprit. Car posséder une mémoire exceptionnelle représentait aussi un poids. Se souvenir de chaque détail signifiait également ne jamais pouvoir complètement oublier certaines choses.</p>
+        <p>Cependant, développer une telle capacité nécessitait également d'apprendre à contrôler son propre esprit. Car
+          posséder une mémoire exceptionnelle représentait aussi un poids. Se souvenir de chaque détail signifiait
+          également ne jamais pouvoir complètement oublier certaines choses.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Les visages des personnes perdues.<br>Les erreurs commises.<br>Les moments d'échec.<br>Les décisions qui auraient pu être différentes.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Les visages des personnes perdues.<br>Les erreurs commises.<br>Les moments d'échec.<br>Les décisions qui
+          auraient pu être différentes.</p>
 
-        <p>Le clan Iesada considérait cette difficulté comme une épreuve supplémentaire. Une mémoire parfaite sans maîtrise mentale pouvait devenir une faiblesse. Un esprit incapable de laisser certaines choses derrière lui pouvait être prisonnier de son propre passé.</p>
+        <p>Le clan Iesada considérait cette difficulté comme une épreuve supplémentaire. Une mémoire parfaite sans
+          maîtrise mentale pouvait devenir une faiblesse. Un esprit incapable de laisser certaines choses derrière lui
+          pouvait être prisonnier de son propre passé.</p>
 
         <p>Kuroha dut donc apprendre non seulement à retenir, mais également à organiser.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">Chaque souvenir devait avoir une utilité.<br>Chaque information devait posséder une place.<br>Chaque émotion liée à un souvenir devait être contrôlée.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">
+          Chaque souvenir devait avoir une utilité.<br>Chaque information devait posséder une place.<br>Chaque émotion
+          liée à un souvenir devait être contrôlée.</p>
 
         <p>C'est ainsi que son entraînement rejoignit la philosophie principale des Iesada, la maîtrise absolue.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Elle ne devait pas devenir une personne submergée par tout ce qu'elle savait.<br>Elle devait devenir une personne capable d'utiliser tout ce qu'elle savait au moment exact où cela était nécessaire.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Elle ne devait pas devenir une personne submergée par tout ce qu'elle savait.<br>Elle devait devenir une
+          personne capable d'utiliser tout ce qu'elle savait au moment exact où cela était nécessaire.</p>
 
-        <p>Au fil des années, cette discipline transforma progressivement sa manière de penser. Lorsqu'elle rencontrait une nouvelle personne, son esprit analysait naturellement sa posture, son regard, son comportement et sa façon de parler. Lorsqu'elle entrait dans un nouveau lieu, elle enregistrait instinctivement les informations importantes. Lorsqu'elle affrontait un adversaire, elle ne cherchait pas uniquement à vaincre. Elle cherchait à comprendre.</p>
+        <p>Au fil des années, cette discipline transforma progressivement sa manière de penser. Lorsqu'elle rencontrait
+          une nouvelle personne, son esprit analysait naturellement sa posture, son regard, son comportement et sa façon
+          de parler. Lorsqu'elle entrait dans un nouveau lieu, elle enregistrait instinctivement les informations
+          importantes. Lorsqu'elle affrontait un adversaire, elle ne cherchait pas uniquement à vaincre. Elle cherchait
+          à comprendre.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Chaque mouvement révélait une habitude.<br>Chaque respiration révélait un rythme.<br>Chaque hésitation révélait une faiblesse.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Chaque mouvement révélait une habitude.<br>Chaque respiration révélait un rythme.<br>Chaque hésitation
+          révélait une faiblesse.</p>
 
-        <p>Cette capacité devint l'un des fondements de son évolution. Kuroha ne gagnait pas seulement grâce à son entraînement physique. Elle gagnait parce qu'elle apprenait constamment. Chaque mission augmentait son expérience. Chaque combat enrichissait ses connaissances. Chaque rencontre pouvait potentiellement devenir un nouvel enseignement.</p>
+        <p>Cette capacité devint l'un des fondements de son évolution. Kuroha ne gagnait pas seulement grâce à son
+          entraînement physique. Elle gagnait parce qu'elle apprenait constamment. Chaque mission augmentait son
+          expérience. Chaque combat enrichissait ses connaissances. Chaque rencontre pouvait potentiellement devenir un
+          nouvel enseignement.</p>
 
-        <p>Son esprit était devenu une bibliothèque de situations vécues, une archive constamment active où chaque information pouvait être rappelée lorsque le moment l'exigeait.</p>
+        <p>Son esprit était devenu une bibliothèque de situations vécues, une archive constamment active où chaque
+          information pouvait être rappelée lorsque le moment l'exigeait.</p>
 
-        <p>Mais cette évolution avait également changé sa manière de percevoir le monde. Kuroha ne voyait plus seulement les individus comme des alliés ou des ennemis. Elle observait leurs comportements, leurs motivations, leurs contradictions. Elle cherchait les causes derrière les actions. Cette capacité d'analyse renforça progressivement son rôle au sein des Pourfendeurs et expliqua pourquoi le clan Iesada voyait en elle un potentiel différent.</p>
+        <p>Mais cette évolution avait également changé sa manière de percevoir le monde. Kuroha ne voyait plus seulement
+          les individus comme des alliés ou des ennemis. Elle observait leurs comportements, leurs motivations, leurs
+          contradictions. Elle cherchait les causes derrière les actions. Cette capacité d'analyse renforça
+          progressivement son rôle au sein des Pourfendeurs et expliqua pourquoi le clan Iesada voyait en elle un
+          potentiel différent.</p>
 
-        <p>Cependant, malgré cette mémoire exceptionnelle, Kuroha savait que cette capacité seule ne suffisait pas. Un esprit capable de retenir le monde entier ne garantissait pas une victoire.</p>
+        <p>Cependant, malgré cette mémoire exceptionnelle, Kuroha savait que cette capacité seule ne suffisait pas. Un
+          esprit capable de retenir le monde entier ne garantissait pas une victoire.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Il fallait encore avoir la discipline nécessaire pour utiliser ces informations correctement.<br>Il fallait garder son calme.<br>Il fallait accepter de prendre une décision malgré l'immensité des possibilités.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Il fallait encore avoir la discipline nécessaire pour utiliser ces informations correctement.<br>Il fallait
+          garder son calme.<br>Il fallait accepter de prendre une décision malgré l'immensité des possibilités.</p>
 
-        <p>Car au final, la véritable force de la mémoire absolue n'était pas de tout savoir. C'était de savoir quoi faire avec ce que l'on savait. Et c'est précisément ce que le clan Iesada cherchait à accomplir avec Kuroha.</p>
+        <p>Car au final, la véritable force de la mémoire absolue n'était pas de tout savoir. C'était de savoir quoi
+          faire avec ce que l'on savait. Et c'est précisément ce que le clan Iesada cherchait à accomplir avec Kuroha.
+        </p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85);">Créer une combattante dont l'expérience ne disparaîtrait jamais.<br>Une combattante qui apprendrait de chaque seconde de son existence.<br>Une combattante capable, un jour, de dépasser les limites imposées aux autres humains.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85);">
+          Créer une combattante dont l'expérience ne disparaîtrait jamais.<br>Une combattante qui apprendrait de chaque
+          seconde de son existence.<br>Une combattante capable, un jour, de dépasser les limites imposées aux autres
+          humains.</p>
 
 
         <h3 id="chapitre-4" style="margin-top: 40px;">Chapitre IV | Le Sang Rare de Kuroha</h3>
-        <p>Parmi les nombreuses particularités qui distinguaient Kuroha des autres Pourfendeurs, son sang occupait une place particulière. Bien avant sa reconnaissance par le clan Iesada, certains détails avaient déjà attiré l'attention de ceux qui l'observaient. Son corps possédait une caractéristique rare, une anomalie que peu d'humains pouvaient posséder.</p>
+        <p>Parmi les nombreuses particularités qui distinguaient Kuroha des autres Pourfendeurs, son sang occupait une
+          place particulière. Bien avant sa reconnaissance par le clan Iesada, certains détails avaient déjà attiré
+          l'attention de ceux qui l'observaient. Son corps possédait une caractéristique rare, une anomalie que peu
+          d'humains pouvaient posséder.</p>
 
         <p>Son sang appartenait à une catégorie extrêmement inhabituelle.</p>
 
-        <p>Au cours des nombreux examens médicaux, analyses physiologiques et observations auxquels Kuroha fut soumise après sa reconnaissance au sein du clan Iesada, une autre particularité fut mise en évidence.</p>
+        <p>Au cours des nombreux examens médicaux, analyses physiologiques et observations auxquels Kuroha fut soumise
+          après sa reconnaissance au sein du clan Iesada, une autre particularité fut mise en évidence.</p>
 
         <p>Son groupe sanguin était <strong>O négatif</strong>.</p>
 
-        <p>Une caractéristique déjà considérée comme particulièrement rare chez les humains. Les érudits du clan savaient qu'il s'agissait d'un sang d'une grande valeur, capable d'être compatible avec la majorité des autres groupes sanguins lors des transfusions. Cette singularité biologique attira immédiatement leur attention, non pas pour son intérêt médical, mais parce qu'elle venait s'ajouter aux nombreuses anomalies déjà observées chez Kuroha.</p>
+        <p>Une caractéristique déjà considérée comme particulièrement rare chez les humains. Les érudits du clan
+          savaient qu'il s'agissait d'un sang d'une grande valeur, capable d'être compatible avec la majorité des autres
+          groupes sanguins lors des transfusions. Cette singularité biologique attira immédiatement leur attention, non
+          pas pour son intérêt médical, mais parce qu'elle venait s'ajouter aux nombreuses anomalies déjà observées chez
+          Kuroha.</p>
 
         <p>Les recherches menées par le clan laissèrent penser que cette rareté n'était peut être pas anodine.</p>
 
-        <p>Sans affirmer qu'il existait un lien direct, certains Iesada émirent l'hypothèse qu'un organisme capable de porter naturellement un groupe sanguin aussi rare, tout en présentant les caractéristiques d'un Marechi, possédait une capacité d'adaptation supérieure à celle d'un être humain ordinaire.</p>
+        <p>Sans affirmer qu'il existait un lien direct, certains Iesada émirent l'hypothèse qu'un organisme capable de
+          porter naturellement un groupe sanguin aussi rare, tout en présentant les caractéristiques d'un Marechi,
+          possédait une capacité d'adaptation supérieure à celle d'un être humain ordinaire.</p>
 
         <p>Cette découverte ne fit que renforcer leur conviction.</p>
 
         <p>Kuroha n'était pas seulement une Pourfendeuse au potentiel élevé.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85);">Elle représentait un sujet d'étude unique, dont chaque particularité semblait rapprocher un peu plus le projet du <strong>Prodige Iesada</strong> de son accomplissement.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85);">
+          Elle représentait un sujet d'étude unique, dont chaque particularité semblait rapprocher un peu plus le projet
+          du <strong>Prodige Iesada</strong> de son accomplissement.</p>
 
-        <p>Dans les archives des Pourfendeurs, certains sangs humains étaient considérés comme plus rares que d'autres. Parmi eux existait le sang Marechi, connu pour son attrait exceptionnel auprès des démons. Ce type de sang représentait une véritable faiblesse pour ceux qui le possédaient, car il pouvait transformer un simple humain en cible permanente pour les créatures qu'ils combattaient.</p>
+        <p>Dans les archives des Pourfendeurs, certains sangs humains étaient considérés comme plus rares que d'autres.
+          Parmi eux existait le sang Marechi, connu pour son attrait exceptionnel auprès des démons. Ce type de sang
+          représentait une véritable faiblesse pour ceux qui le possédaient, car il pouvait transformer un simple humain
+          en cible permanente pour les créatures qu'ils combattaient.</p>
 
-        <p>Cependant, pour le clan Iesada, une particularité ne devait jamais être considérée uniquement comme une faiblesse.</p>
+        <p>Cependant, pour le clan Iesada, une particularité ne devait jamais être considérée uniquement comme une
+          faiblesse.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">Chaque avantage possédait un risque.<br>Chaque risque pouvait devenir une épreuve.<br>Et chaque épreuve pouvait devenir une force.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">
+          Chaque avantage possédait un risque.<br>Chaque risque pouvait devenir une épreuve.<br>Et chaque épreuve
+          pouvait devenir une force.</p>
 
-        <p>Lorsque les Iesada étudièrent le sang de Kuroha, ils ne virent pas simplement une caractéristique qui attirerait les démons. Ils virent une nouvelle limite que leur future prodige devait apprendre à maîtriser.</p>
+        <p>Lorsque les Iesada étudièrent le sang de Kuroha, ils ne virent pas simplement une caractéristique qui
+          attirerait les démons. Ils virent une nouvelle limite que leur future prodige devait apprendre à maîtriser.
+        </p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Son sang faisait d'elle une cible naturelle.<br>Les démons pouvaient ressentir sa présence plus facilement.<br>Ils pouvaient être attirés par elle plus rapidement.<br>Certaines rencontres qui auraient pu être évitées devenaient inévitables.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Son sang faisait d'elle une cible naturelle.<br>Les démons pouvaient ressentir sa présence plus
+          facilement.<br>Ils pouvaient être attirés par elle plus rapidement.<br>Certaines rencontres qui auraient pu
+          être évitées devenaient inévitables.</p>
 
-        <p>Là où d'autres Pourfendeurs auraient cherché à dissimuler une telle particularité, Kuroha fut entraînée à l'accepter comme une partie intégrante de son existence. Le clan Iesada considérait que fuir cette réalité aurait été une erreur. Un véritable guerrier ne devait pas chercher à supprimer ce qui le rendait différent. Il devait apprendre à le contrôler.</p>
+        <p>Là où d'autres Pourfendeurs auraient cherché à dissimuler une telle particularité, Kuroha fut entraînée à
+          l'accepter comme une partie intégrante de son existence. Le clan Iesada considérait que fuir cette réalité
+          aurait été une erreur. Un véritable guerrier ne devait pas chercher à supprimer ce qui le rendait différent.
+          Il devait apprendre à le contrôler.</p>
 
         <p>Ainsi, son sang devint une épreuve supplémentaire dans son développement.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Chaque mission représentait un risque plus élevé.<br>Chaque confrontation contre un démon pouvait devenir plus dangereuse.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Chaque mission représentait un risque plus élevé.<br>Chaque confrontation contre un démon pouvait devenir plus
+          dangereuse.</p>
 
-        <p>Mais cette contrainte forgea également une mentalité particulière chez Kuroha. Elle apprit à ne jamais considérer une situation comme acquise. Elle comprit que le moindre relâchement pouvait provoquer l'arrivée d'un ennemi supplémentaire. Elle développa une vigilance permanente, une capacité à anticiper les menaces et une discipline encore plus stricte que celle imposée aux autres Pourfendeurs.</p>
+        <p>Mais cette contrainte forgea également une mentalité particulière chez Kuroha. Elle apprit à ne jamais
+          considérer une situation comme acquise. Elle comprit que le moindre relâchement pouvait provoquer l'arrivée
+          d'un ennemi supplémentaire. Elle développa une vigilance permanente, une capacité à anticiper les menaces et
+          une discipline encore plus stricte que celle imposée aux autres Pourfendeurs.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">Son propre sang devint un rappel constant.<br>Elle ne pouvait pas se permettre d'être négligente.<br>Elle ne pouvait pas agir sans réfléchir.<br>Elle ne pouvait pas sous estimer ses adversaires.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.8);">
+          Son propre sang devint un rappel constant.<br>Elle ne pouvait pas se permettre d'être négligente.<br>Elle ne
+          pouvait pas agir sans réfléchir.<br>Elle ne pouvait pas sous estimer ses adversaires.</p>
 
-        <p>Car contrairement à d'autres combattants qui choisissaient leurs affrontements, certains affrontements pouvaient venir directement à elle.</p>
+        <p>Car contrairement à d'autres combattants qui choisissaient leurs affrontements, certains affrontements
+          pouvaient venir directement à elle.</p>
 
-        <p>Cependant, le clan Iesada ne considérait pas seulement ce sang comme une faiblesse. Selon certaines théories étudiées par le clan, une telle concentration de particularités rares pouvait également représenter un potentiel exceptionnel.</p>
+        <p>Cependant, le clan Iesada ne considérait pas seulement ce sang comme une faiblesse. Selon certaines théories
+          étudiées par le clan, une telle concentration de particularités rares pouvait également représenter un
+          potentiel exceptionnel.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Un corps capable de supporter un sang aussi particulier pouvait démontrer une résistance inhabituelle.<br>Une capacité d'adaptation supérieure.<br>Une compatibilité différente avec certaines évolutions physiques.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Un corps capable de supporter un sang aussi particulier pouvait démontrer une résistance inhabituelle.<br>Une
+          capacité d'adaptation supérieure.<br>Une compatibilité différente avec certaines évolutions physiques.</p>
 
-        <p>Le groupe sanguin O négatif de Kuroha, associé aux propriétés du Marechi, renforçait cette théorie. Pour les Iesada, il ne s'agissait plus simplement d'une anomalie biologique, mais d'un indice supplémentaire que son organisme possédait des caractéristiques exceptionnelles pouvant, à terme, lui permettre de supporter des évolutions que la majorité des humains n'auraient jamais été capables d'endurer.</p>
+        <p>Le groupe sanguin O négatif de Kuroha, associé aux propriétés du Marechi, renforçait cette théorie. Pour les
+          Iesada, il ne s'agissait plus simplement d'une anomalie biologique, mais d'un indice supplémentaire que son
+          organisme possédait des caractéristiques exceptionnelles pouvant, à terme, lui permettre de supporter des
+          évolutions que la majorité des humains n'auraient jamais été capables d'endurer.</p>
 
-        <p>C'est pour cette raison que le sang de Kuroha devint un élément supplémentaire du projet du <strong>Prodige Iesada</strong>.</p>
+        <p>C'est pour cette raison que le sang de Kuroha devint un élément supplémentaire du projet du <strong>Prodige
+            Iesada</strong>.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Il ne suffisait pas qu'elle possède un sang rare.<br>Elle devait apprendre à vivre avec.<br>À le maîtriser.<br>À empêcher qu'il devienne une faille exploitable par ses ennemis.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Il ne suffisait pas qu'elle possède un sang rare.<br>Elle devait apprendre à vivre avec.<br>À le
+          maîtriser.<br>À empêcher qu'il devienne une faille exploitable par ses ennemis.</p>
 
-        <p>Le but n'était pas de changer ce qu'elle était. Le but était de transformer ce qui aurait pu être une vulnérabilité en une caractéristique supplémentaire de son arsenal.</p>
+        <p>Le but n'était pas de changer ce qu'elle était. Le but était de transformer ce qui aurait pu être une
+          vulnérabilité en une caractéristique supplémentaire de son arsenal.</p>
 
         <p>Avec le temps, Kuroha développa une relation particulière avec cette partie d'elle même.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85);">Son sang représentait un paradoxe.<br>Il était une invitation permanente pour les démons.<br>Mais il était également une preuve de sa différence.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.3); line-height:2.2; color: rgba(200,220,220,0.85);">
+          Son sang représentait un paradoxe.<br>Il était une invitation permanente pour les démons.<br>Mais il était
+          également une preuve de sa différence.</p>
 
-        <p>Chaque démon attiré par son existence devenait une nouvelle épreuve. Chaque combat remporté prouvait qu'elle était capable de survivre malgré cette particularité. Chaque victoire renforçait une idée que le clan Iesada cherchait à démontrer,</p>
+        <p>Chaque démon attiré par son existence devenait une nouvelle épreuve. Chaque combat remporté prouvait qu'elle
+          était capable de survivre malgré cette particularité. Chaque victoire renforçait une idée que le clan Iesada
+          cherchait à démontrer,</p>
 
-        <blockquote style="margin: 25px 0;">Une faiblesse n'est pas toujours quelque chose qu'il faut éliminer.<br>Parfois, c'est quelque chose qu'il faut apprendre à dominer.</blockquote>
+        <blockquote style="margin: 25px 0;">Une faiblesse n'est pas toujours quelque chose qu'il faut
+          éliminer.<br>Parfois, c'est quelque chose qu'il faut apprendre à dominer.</blockquote>
 
-        <p>Pourtant, même avec un corps exceptionnel, une mémoire développée et un entraînement dépassant celui de nombreux Pourfendeurs, le clan savait qu'il restait une étape encore plus difficile.</p>
+        <p>Pourtant, même avec un corps exceptionnel, une mémoire développée et un entraînement dépassant celui de
+          nombreux Pourfendeurs, le clan savait qu'il restait une étape encore plus difficile.</p>
 
-        <p style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">Un humain pouvait devenir rapide.<br>Un humain pouvait devenir fort.<br>Un humain pouvait développer un esprit supérieur.<br>Mais atteindre l'étape suivante demandait de dépasser les limites naturelles du corps humain.</p>
+        <p
+          style="padding-left:20px; border-left: 2px solid rgba(11,197,234,0.2); line-height:2.2; color: rgba(200,220,220,0.7); font-style:italic;">
+          Un humain pouvait devenir rapide.<br>Un humain pouvait devenir fort.<br>Un humain pouvait développer un esprit
+          supérieur.<br>Mais atteindre l'étape suivante demandait de dépasser les limites naturelles du corps humain.
+        </p>
 
         <p>La Marque du Pourfendeur.</p>
 
-        <p>Un pouvoir dont la véritable difficulté n'était pas seulement de l'éveiller, mais d'être capable de survivre après son apparition.</p>
+        <p>Un pouvoir dont la véritable difficulté n'était pas seulement de l'éveiller, mais d'être capable de survivre
+          après son apparition.</p>
 
         <h3 id="chapitre-5" style="margin-top: 40px;">Chapitre V | La Préparation à la Marque du Pourfendeur</h3>
-        <p>Pour le clan Iesada, la Marque du Pourfendeur n'était pas considérée comme une simple bénédiction ou un pouvoir que l'on pouvait obtenir sans contrainte. Elle représentait l'aboutissement d'un entraînement extrême, mais surtout une malédiction mortelle. En échange d'une puissance physique et d'une vitesse surhumaines, la Marque consume le corps de son détenteur à petit feu, condamnant la quasi totalité de ceux qui l'éveillent à mourir prématurément avant l'âge de vingt cinq ans.</p>
+        <p>Pour le clan Iesada, la Marque du Pourfendeur n'était pas considérée comme une simple bénédiction ou un
+          pouvoir que l'on pouvait obtenir sans contrainte. Elle représentait l'aboutissement d'un entraînement extrême,
+          mais surtout une malédiction mortelle. En échange d'une puissance physique et d'une vitesse surhumaines, la
+          Marque consume le corps de son détenteur à petit feu, condamnant la quasi totalité de ceux qui l'éveillent à
+          mourir prématurément avant l'âge de vingt cinq ans.</p>
         <p>Cependant, les érudits du clan Iesada avaient toujours considéré une chose comme essentielle,</p>
         <p>Éveiller la marque n'était pas la véritable difficulté.</p>
-        <p>Le véritable objectif ultime était de forger un corps et un esprit capables de dompter cette chaleur dévorante pour survivre à sa malédiction mortelle.</p>
-        <p>La Marque du Pourfendeur représentait une rupture avec les capacités normales d'un être humain. Elle forçait le corps à dépasser ses propres restrictions, augmentant ses capacités physiques au prix d'une pression immense sur l'organisme.</p>
+        <p>Le véritable objectif ultime était de forger un corps et un esprit capables de dompter cette chaleur
+          dévorante pour survivre à sa malédiction mortelle.</p>
+        <p>La Marque du Pourfendeur représentait une rupture avec les capacités normales d'un être humain. Elle forçait
+          le corps à dépasser ses propres restrictions, augmentant ses capacités physiques au prix d'une pression
+          immense sur l'organisme.</p>
         <p>La température du corps augmentait.</p>
         <p>Le rythme cardiaque était poussé à un niveau supérieur.</p>
-        <p>Les muscles, les organes et l'ensemble du système humain étaient soumis à une contrainte qui pouvait dépasser ce qu'un corps ordinaire était capable de supporter.</p>
+        <p>Les muscles, les organes et l'ensemble du système humain étaient soumis à une contrainte qui pouvait dépasser
+          ce qu'un corps ordinaire était capable de supporter.</p>
         <p>Pour la majorité des Pourfendeurs, atteindre cet état représentait déjà un exploit presque impossible.</p>
         <p>Pour les Iesada, ce n'était que la première étape.</p>
         <p>Car une puissance que l'on ne pouvait pas contrôler n'était pas une véritable puissance.</p>
         <p>Elle n'était qu'un danger supplémentaire.</p>
-        <p>C'est pour cette raison que le clan ne cherchait pas à provoquer artificiellement l'apparition de la Marque chez Kuroha. Ils considéraient qu'une personne incapable de supporter son propre pouvoir finirait simplement détruite par celui ci.</p>
+        <p>C'est pour cette raison que le clan ne cherchait pas à provoquer artificiellement l'apparition de la Marque
+          chez Kuroha. Ils considéraient qu'une personne incapable de supporter son propre pouvoir finirait simplement
+          détruite par celui ci.</p>
         <p>L'objectif était différent.</p>
-        <p>Préparer chaque partie de son être afin que, lorsque le moment arriverait, son corps ne rejette pas cette évolution.</p>
+        <p>Préparer chaque partie de son être afin que, lorsque le moment arriverait, son corps ne rejette pas cette
+          évolution.</p>
         <p>La première étape de cette préparation fut la maîtrise parfaite du corps.</p>
         <p>Kuroha devait apprendre à connaître chaque limite de son organisme.</p>
         <p>Elle devait comprendre ses réactions face à la fatigue.</p>
@@ -421,7 +722,8 @@
         <p>Elle devait être capable de maintenir sa concentration malgré une douleur importante.</p>
         <p>Le corps ne devait plus être un obstacle.</p>
         <p>Il devait devenir un instrument parfaitement contrôlé.</p>
-        <p>Les entraînements étaient donc construits autour d'une idée simple, pousser Kuroha jusqu'à son maximum, puis repousser progressivement cette limite.</p>
+        <p>Les entraînements étaient donc construits autour d'une idée simple, pousser Kuroha jusqu'à son maximum, puis
+          repousser progressivement cette limite.</p>
         <p>L'objectif n'était pas de la briser.</p>
         <p>L'objectif était de permettre à son corps de s'adapter.</p>
         <p>Chaque effort supplémentaire renforçait sa résistance.</p>
@@ -442,7 +744,8 @@
         <p>La colère devait pouvoir être utilisée sans être subie.</p>
         <p>La peur devait pouvoir être ressentie sans devenir une faiblesse.</p>
         <p>L'attachement devait pouvoir exister sans influencer le devoir.</p>
-        <p>C'était cette discipline mentale qui devait permettre à Kuroha de rester elle même lorsque son corps atteindrait un état dépassant les limites humaines.</p>
+        <p>C'était cette discipline mentale qui devait permettre à Kuroha de rester elle même lorsque son corps
+          atteindrait un état dépassant les limites humaines.</p>
         <p>La troisième étape concernait l'adaptation au changement.</p>
         <p>La Marque n'était pas seulement une augmentation de puissance.</p>
         <p>Elle représentait une transformation profonde du fonctionnement du corps.</p>
@@ -452,7 +755,8 @@
         <p>Des situations où elle devait continuer d'agir malgré l'inconfort, la fatigue ou la difficulté.</p>
         <p>Chaque expérience avait un objectif précis.</p>
         <p>Habituer son corps à ne pas paniquer lorsqu'il atteindrait un état inhabituel.</p>
-        <p>Car le jour où la Marque apparaîtrait, son organisme devrait comprendre qu'il ne s'agissait pas d'une menace.</p>
+        <p>Car le jour où la Marque apparaîtrait, son organisme devrait comprendre qu'il ne s'agissait pas d'une menace.
+        </p>
         <p>Mais d'une nouvelle étape.</p>
         <p>Cependant, le clan Iesada savait qu'il existait une différence entre supporter la Marque et la maîtriser.</p>
         <p>Supporter signifiait simplement survivre.</p>
@@ -463,31 +767,43 @@
         <p>Même après avoir atteint le rang de Tsuchinoe.</p>
         <p>Le chemin vers le titre de prodige Iesada n'était pas terminé.</p>
         <p>Car pour le clan, un véritable prodige n'était pas une personne qui atteignait rapidement un sommet.</p>
-        <p>C'était une personne capable de continuer à progresser là où les autres auraient considéré leur évolution terminée.</p>
+        <p>C'était une personne capable de continuer à progresser là où les autres auraient considéré leur évolution
+          terminée.</p>
         <p>L'objectif final était clair.</p>
         <p>Créer une personne capable d'éveiller la Marque du Pourfendeur.</p>
         <p>Une personne capable de résister à l'augmentation de chaleur provoquée par cette dernière.</p>
         <p>Une personne capable de supporter les changements imposés à son corps.</p>
         <p>Une personne capable d'utiliser cette puissance sans être détruite par elle.</p>
         <p>Kuroha ne devait pas simplement obtenir un pouvoir supérieur.</p>
-        <p>Elle devait devenir quelqu'un dont le corps, l'esprit et la volonté seraient suffisamment solides pour accepter ce pouvoir.</p>
+        <p>Elle devait devenir quelqu'un dont le corps, l'esprit et la volonté seraient suffisamment solides pour
+          accepter ce pouvoir.</p>
         <p>Car selon les enseignements du clan Iesada,</p>
-        <blockquote style="margin: 25px 0;">« Une véritable arme n'est pas celle qui possède le plus de puissance. »</blockquote>
-        <blockquote style="margin: 25px 0;">« C'est celle qui reste parfaitement contrôlée même lorsqu'elle possède assez de puissance pour tout détruire. »</blockquote>
+        <blockquote style="margin: 25px 0;">« Une véritable arme n'est pas celle qui possède le plus de puissance. »
+        </blockquote>
+        <blockquote style="margin: 25px 0;">« C'est celle qui reste parfaitement contrôlée même lorsqu'elle possède
+          assez de puissance pour tout détruire. »</blockquote>
         <p>Et c'était précisément ce que Kuroha devait devenir.</p>
 
 
-        <h3 id="chapitre-6" style="margin-top: 40px;">Chapitre VI | Pourquoi Kuroha continue encore aujourd'hui à subir des entraînements extrêmes malgré son rang de Tsuchinoe</h3>
-        <p>Atteindre le rang de Tsuchinoe représentait une étape importante dans le parcours d'un Pourfendeur. Pour beaucoup, ce rang était la preuve d'une progression accomplie, la reconnaissance d'un certain niveau de maîtrise et le signe qu'un combattant avait déjà dépassé une grande partie des membres de l'Ordre.</p>
+        <h3 id="chapitre-6" style="margin-top: 40px;">Chapitre VI | Pourquoi Kuroha continue encore aujourd'hui à subir
+          des entraînements extrêmes malgré son rang de Tsuchinoe</h3>
+        <p>Atteindre le rang de Tsuchinoe représentait une étape importante dans le parcours d'un Pourfendeur. Pour
+          beaucoup, ce rang était la preuve d'une progression accomplie, la reconnaissance d'un certain niveau de
+          maîtrise et le signe qu'un combattant avait déjà dépassé une grande partie des membres de l'Ordre.</p>
         <p>Mais pour Kuroha, ce rang ne représentait pas une finalité.</p>
         <p>Il représentait uniquement la confirmation qu'elle était capable de continuer.</p>
-        <p>Là où certains considéraient leur évolution comme suffisante, Kuroha voyait encore les limites qu'elle n'avait pas franchies. Elle ne se mesurait pas uniquement aux autres Pourfendeurs, mais à l'objectif qui lui avait été confié depuis son intégration au clan Iesada.</p>
+        <p>Là où certains considéraient leur évolution comme suffisante, Kuroha voyait encore les limites qu'elle
+          n'avait pas franchies. Elle ne se mesurait pas uniquement aux autres Pourfendeurs, mais à l'objectif qui lui
+          avait été confié depuis son intégration au clan Iesada.</p>
         <p>Devenir un prodige.</p>
-        <p>Ce mot n'était pas un simple titre ou une reconnaissance symbolique. Il représentait une exigence permanente. Un prodige n'était pas quelqu'un qui avait atteint un niveau supérieur une seule fois. C'était quelqu'un qui continuait d'évoluer lorsque les autres commençaient à stagner.</p>
+        <p>Ce mot n'était pas un simple titre ou une reconnaissance symbolique. Il représentait une exigence permanente.
+          Un prodige n'était pas quelqu'un qui avait atteint un niveau supérieur une seule fois. C'était quelqu'un qui
+          continuait d'évoluer lorsque les autres commençaient à stagner.</p>
         <p>Pour cette raison, son passage au rang de Tsuchinoe ne diminua pas la rigueur de son entraînement.</p>
         <p>Au contraire.</p>
         <p>Il marqua le début d'une nouvelle phase.</p>
-        <p>Le clan Iesada considérait qu'un combattant devait être capable de repousser ses propres limites avant de prétendre pouvoir affronter celles des autres.</p>
+        <p>Le clan Iesada considérait qu'un combattant devait être capable de repousser ses propres limites avant de
+          prétendre pouvoir affronter celles des autres.</p>
         <p>Un Tsuchinoe possédait déjà des compétences importantes.</p>
         <p>Mais un futur prodige devait aller au delà.</p>
         <p>Kuroha devait encore perfectionner chaque aspect de son existence.</p>
@@ -509,22 +825,26 @@
         <p>Chaque situation difficile permettait d'identifier une nouvelle faiblesse.</p>
         <p>Elle ne s'entraînait pas uniquement pour devenir plus forte.</p>
         <p>Elle s'entraînait pour devenir capable de supporter ce qui viendrait après.</p>
-        <p>La Marque représentait un état où le corps humain dépassait temporairement ses propres restrictions. Une puissance immense, mais accompagnée d'un risque tout aussi important.</p>
+        <p>La Marque représentait un état où le corps humain dépassait temporairement ses propres restrictions. Une
+          puissance immense, mais accompagnée d'un risque tout aussi important.</p>
         <p>Une personne incapable de contrôler son corps serait détruite par cette puissance.</p>
         <p>Une personne incapable de contrôler son esprit serait consumée par cette évolution.</p>
-        <p>C'est pourquoi Kuroha continuait à travailler sur des aspects que beaucoup auraient considérés comme secondaires.</p>
+        <p>C'est pourquoi Kuroha continuait à travailler sur des aspects que beaucoup auraient considérés comme
+          secondaires.</p>
         <p>La respiration.</p>
         <p>La concentration.</p>
         <p>La gestion de la fatigue.</p>
         <p>La stabilité émotionnelle.</p>
         <p>La précision des gestes.</p>
-        <p>Tout ce qui pouvait faire la différence entre une personne possédant une grande puissance et une personne capable de la maîtriser.</p>
+        <p>Tout ce qui pouvait faire la différence entre une personne possédant une grande puissance et une personne
+          capable de la maîtriser.</p>
         <p>Cependant, la raison la plus profonde de son entraînement ne concernait pas uniquement la force.</p>
         <p>Elle concernait son identité.</p>
         <p>Depuis qu'elle avait été reconnue par les Iesada, Kuroha avait accepté de porter leurs attentes.</p>
         <p>Elle savait que son nom représentait plus qu'elle même.</p>
         <p>Elle représentait une possibilité.</p>
-        <p>La preuve qu'un individu pouvait continuellement évoluer et repousser les limites imposées par sa condition.</p>
+        <p>La preuve qu'un individu pouvait continuellement évoluer et repousser les limites imposées par sa condition.
+        </p>
         <p>Mais cette responsabilité ne lui apportait pas de satisfaction particulière.</p>
         <p>Kuroha n'était pas motivée par la gloire.</p>
         <p>Elle ne cherchait pas à être admirée.</p>
@@ -534,7 +854,8 @@
         <p>Si une faiblesse existait en elle, alors elle devait être corrigée.</p>
         <p>Si une limite pouvait être dépassée, alors elle devait être franchie.</p>
         <p>Ne pas chercher à progresser aurait représenté, pour elle, une forme d'échec.</p>
-        <p>Cette mentalité expliquait également pourquoi Kuroha acceptait des entraînements que beaucoup auraient refusés.</p>
+        <p>Cette mentalité expliquait également pourquoi Kuroha acceptait des entraînements que beaucoup auraient
+          refusés.</p>
         <p>Elle ne considérait pas la difficulté comme une punition.</p>
         <p>Elle la considérait comme une indication.</p>
         <p>Une douleur signifiait une limite.</p>
@@ -543,7 +864,8 @@
         <p>Chaque épreuve représentait donc une information.</p>
         <p>Chaque difficulté représentait un apprentissage.</p>
         <p>Chaque échec représentait une correction nécessaire.</p>
-        <p>Aujourd'hui encore, malgré son rang de Tsuchinoe, Kuroha continue donc de suivre les enseignements et les exigences du clan Iesada.</p>
+        <p>Aujourd'hui encore, malgré son rang de Tsuchinoe, Kuroha continue donc de suivre les enseignements et les
+          exigences du clan Iesada.</p>
         <p>Non parce qu'elle serait insuffisante.</p>
         <p>Mais parce qu'elle refuse de considérer qu'elle est arrivée au bout de son évolution.</p>
         <p>Elle sait ce qu'elle est actuellement.</p>
@@ -558,7 +880,7 @@
         <p>Mais pour Kuroha, c'est précisément cette distance restante qui donne un sens à son entraînement.</p>
         <p>Car le jour où elle n'aura plus rien à apprendre sera probablement le jour où elle aura cessé d'évoluer.</p>
 
-        </article>
+      </article>
     </section>
   </main>
 
@@ -568,7 +890,8 @@
     <div class="edit-modal__content">
       <div class="edit-modal__header">
         <h3 class="serif-title"><ion-icon name="create outline"></ion-icon> PANNEAU D'ÉDITION DES ARCHIVES</h3>
-        <button class="close-button" id="closeModalBtn" type="button"><ion-icon name="close outline"></ion-icon></button>
+        <button class="close-button" id="closeModalBtn" type="button"><ion-icon
+            name="close outline"></ion-icon></button>
       </div>
 
       <form id="loreForm" class="lore-form">
@@ -636,4 +959,5 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
