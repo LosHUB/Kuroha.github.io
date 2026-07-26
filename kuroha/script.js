@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const entered = (passInput ? passInput.value : '').trim().toLowerCase();
 
         // ⬇️ CHANGER LE MOT DE PASSE ICI ⬇️ (remplacer 'kuroha' par ton nouveau mot de passe)
-        if (entered === 'flaby') {
+        if (entered === 'kuroha') {
             if (passError) passError.style.opacity = '0';
             body.classList.remove('is-locked');
             body.classList.add('is-unlocked');
